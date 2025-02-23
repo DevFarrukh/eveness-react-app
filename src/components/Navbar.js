@@ -17,7 +17,7 @@ const Navbar = () => {
 
         {/* Menu Links */}
         <div className="hidden md:flex items-center gap-6 bg-white/80 backdrop-blur-lg rounded-lg py-2 px-4">
-          <Link to="/" className="text-black font-medium">Home</Link>
+          <Link to="/home" className="text-black font-medium">Home</Link>
           <Link to="/dashboard" className="text-gray-500 hover:text-black">Dashboard</Link>
           <Link to="/shop" className="text-gray-500 hover:text-black">Shop</Link>
           <Link to="/magazine" className="text-gray-500 hover:text-black">Magazine</Link>
