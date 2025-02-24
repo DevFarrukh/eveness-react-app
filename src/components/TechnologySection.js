@@ -13,7 +13,7 @@ const TechnologySection = () => {
           />
           
           {/* Floating content card */}
-          <div className="relative mt-[-330px] sm:mt-[-40px] z-10 flex justify-center sm:justify-start sm:absolute sm:right-16 sm:top-[70%] sm:-translate-y-1/2 p-4 sm:p-0">
+          <div className="relative mt-[-380px] sm:mt-[-40px] z-10 flex justify-center sm:justify-start sm:absolute sm:right-16 sm:top-[70%] sm:-translate-y-1/2 p-4 sm:p-0">
             <div className="bg-white/80 backdrop-blur-lg rounded-3xl p-8 max-w-[580px]">
               <h2 className="text-[22px] sm:text-3xl font-medium mb-3 sm:mb-4 leading-tight">
                 Technology that Accentuates Your Beauty

@@ -34,13 +34,13 @@ const OnboardingSteps = () => {
                   className="w-full h-full object-cover"
                 />
                 <div 
-                  className="absolute bottom-12 left-1/2 -translate-x-1/2 w-[280px] h-[95px] bg-white/70 rounded-[32px]"
+                  className="absolute bottom-12 left-1/2 -translate-x-1/2 w-[280px] h-[120px] bg-white/70 rounded-[32px]"
                   style={{
                     backdropFilter: 'blur(35.69px)',
                     padding: '20px 24px'
                   }}
                 >
-                  <div className="flex flex-col gap-2">
+                  <div className="flex flex-col gap-2 h-full justify-center">
                     <h3 className="font-medium text-center">Answer Tailored Prompts</h3>
                     <p className="text-sm text-gray-600 text-center">Train Our Algorithm on your size needs</p>
                   </div>
@@ -68,13 +68,13 @@ const OnboardingSteps = () => {
                   className="w-full h-full object-cover"
                 />
                 <div 
-                  className="absolute bottom-12 left-1/2 -translate-x-1/2 w-[280px] h-[95px] bg-white/70 rounded-[32px]"
+                  className="absolute bottom-12 left-1/2 -translate-x-1/2 w-[280px] h-[120px] bg-white/70 rounded-[32px]"
                   style={{
                     backdropFilter: 'blur(35.69px)',
                     padding: '20px 24px'
                   }}
                 >
-                  <div className="flex flex-col gap-2">
+                  <div className="flex flex-col gap-2 h-full justify-center">
                     <h3 className="font-medium text-center">Upload Your Headshot</h3>
                     <p className="text-sm text-gray-600 text-center">Receive complimentary color analysis and face shape analysis</p>
                   </div>
@@ -102,13 +102,13 @@ const OnboardingSteps = () => {
                   className="w-full h-full object-cover"
                 />
                 <div 
-                  className="absolute bottom-12 left-1/2 -translate-x-1/2 w-[280px] h-[95px] bg-white/70 rounded-[32px]"
+                  className="absolute bottom-12 left-1/2 -translate-x-1/2 w-[280px] h-[120px] bg-white/70 rounded-[32px]"
                   style={{
                     backdropFilter: 'blur(35.69px)',
                     padding: '20px 24px'
                   }}
                 >
-                  <div className="flex flex-col gap-2">
+                  <div className="flex flex-col gap-2 h-full justify-center">
                     <h3 className="font-medium text-center">Access Ecosystem</h3>
                     <p className="text-sm text-gray-600 text-center">Our House Algorithm Marketplace Fashion GPT</p>
                   </div>

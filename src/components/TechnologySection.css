@@ -1,9 +1,0 @@
-@media (max-width: 768px) {
-    .relative div:first-child {
-      /* Remove these fixed values:
-      width: 358px !important;
-      height: 553px !important;
-      */
-      border-radius: 16px !important;
-    }
-  }

@@ -4,7 +4,7 @@ import blurBackground from '../assets/blur-rectangle.png'; // Import blur effect
 
 const LpHero = () => {
   return (
-    <div className="relative flex items-center justify-center pt-20 px-4">
+    <div className="relative flex items-center justify-center pt-44 px-4">
       {/* Video Background */}
       <div className="relative w-full sm:w-[1447px] h-[500px] sm:h-[546px] rounded-[16px] overflow-hidden shadow-lg flex items-center justify-center">
         <video 
@@ -22,7 +22,7 @@ const LpHero = () => {
           className="absolute flex flex-col justify-center items-center text-center 
                      rounded-[16px] bg-no-repeat bg-cover bg-center px-6 py-4 w-full h-full"
         >
-          <h1 className="text-xl sm:text-4xl font-bold text-black max-w-[500px]">
+          <h1 className="text-xl sm:text-4xl font-poppins font-bold text-black max-w-[500px]">
             Experience the Future
             <br />
             of Fashion
