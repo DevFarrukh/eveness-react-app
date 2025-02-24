@@ -50,11 +50,11 @@ const ForAnyOccasion = () => {
       </div>
 
       {/* Mobile Scrollable Layout */}
-      <div className="md:hidden flex gap-3 sm:gap-4 overflow-x-auto scrollbar-hide px-2 sm:px-4 py-4">
+      <div className="md:hidden flex gap-2 overflow-x-auto scrollbar-hide px-2 py-4">
         {products.map((product, index) => (
           <div 
             key={index} 
-            className="relative min-w-[280px] sm:min-w-[320px] h-[300px] sm:h-[350px] rounded-[12px] overflow-visible shadow-lg flex-shrink-0"
+            className="relative min-w-[200px] h-[250px] rounded-[12px] overflow-visible shadow-lg flex-shrink-0"
           >
             {/* Image */}
             <img
@@ -64,8 +64,8 @@ const ForAnyOccasion = () => {
             />
             
             {/* Floating Button */}
-            <div className="absolute bottom-[-20px] sm:bottom-[-24px] left-1/2 transform -translate-x-1/2 
-                            bg-white/70 backdrop-blur-lg w-[140px] sm:w-[180px] h-[40px] sm:h-[48px] text-xs sm:text-sm font-medium 
+            <div className="absolute bottom-[-20px] left-1/2 transform -translate-x-1/2 
+                            bg-white/70 backdrop-blur-lg w-[120px] h-[36px] text-xs font-medium 
                             flex items-center justify-center rounded-[8.8px] shadow-lg border border-white">
               {product.name}
             </div>

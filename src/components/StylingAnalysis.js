@@ -41,10 +41,9 @@ const StylingAnalysis = () => {
           {/* Content container */}
           <div className="flex-1 relative">
             <div className="absolute right-2 sm:right-3 top-1/2 -translate-y-1/2 
-                        w-[140px] sm:w-[180px] md:w-[240px] p-2 sm:p-3 md:p-4 rounded-lg sm:rounded-xl
-                        text-center"
+                        w-[200px] sm:w-[180px] md:w-[240px] p-2 sm:p-3 md:p-4 rounded-lg sm:rounded-xl
+                        text-center bg-[rgba(0,0,0,0.06)]"
                  style={{ 
-                   background: 'rgba(0, 0, 0, 0.06)',
                    backdropFilter: 'blur(35.87px)',
                    boxShadow: '0px 0px 15.94px 0px rgba(0, 0, 0, 0.01)'
                  }}>
@@ -75,10 +74,9 @@ const StylingAnalysis = () => {
           
           <div className="flex-1 relative">
             <div className="absolute right-2 sm:right-3 top-1/2 -translate-y-1/2 
-                        w-[140px] sm:w-[180px] md:w-[240px] p-2 sm:p-3 md:p-4 rounded-lg sm:rounded-xl
-                        text-center"
+                        w-[200px] sm:w-[180px] md:w-[240px] p-2 sm:p-3 md:p-4 rounded-lg sm:rounded-xl
+                        text-center bg-[rgba(0,0,0,0.06)]"
                  style={{ 
-                   background: 'rgba(0, 0, 0, 0.06)',
                    backdropFilter: 'blur(35.87px)',
                    boxShadow: '0px 0px 15.94px 0px rgba(0, 0, 0, 0.01)'
                  }}>
@@ -109,10 +107,9 @@ const StylingAnalysis = () => {
           
           <div className="flex-1 relative">
             <div className="absolute right-2 sm:right-3 top-1/2 -translate-y-1/2 
-                        w-[140px] sm:w-[180px] md:w-[240px] p-2 sm:p-3 md:p-4 rounded-lg sm:rounded-xl
-                        text-center"
+                        w-[200px] sm:w-[180px] md:w-[240px] p-2 sm:p-3 md:p-4 rounded-lg sm:rounded-xl
+                        text-center bg-[rgba(0,0,0,0.06)]"
                  style={{ 
-                   background: 'rgba(0, 0, 0, 0.06)',
                    backdropFilter: 'blur(35.87px)',
                    boxShadow: '0px 0px 15.94px 0px rgba(0, 0, 0, 0.01)'
                  }}>
