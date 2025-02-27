@@ -6,7 +6,7 @@ const LpHero = () => {
   return (
     <div className="relative flex items-center justify-center pt-44 px-4">
       {/* Video Background */}
-      <div className="relative w-full sm:w-[1447px] h-[500px] sm:h-[546px] rounded-[16px] overflow-hidden shadow-lg flex items-center justify-center">
+      <div className="relative w-full sm:w-[1266px] h-[500px] sm:h-[713px] rounded-[16px] overflow-hidden shadow-lg flex items-center justify-center">
         <video 
           autoPlay 
           loop 
@@ -22,17 +22,24 @@ const LpHero = () => {
           className="absolute flex flex-col justify-center items-center text-center 
                      rounded-[16px] bg-no-repeat bg-cover bg-center px-6 py-4 w-full h-full"
         >
-          <h1 className="text-xl sm:text-4xl font-poppins font-bold text-black max-w-[500px]">
-            Experience the Future
-            <br />
-            of Fashion
+          <h1 className="text-xl sm:text-4xl font-poppins font-bold text-black max-w-[500px] relative">
+            <span className="absolute inset-0 mix-blend-difference text-white">
+              Experience the
+              <br />
+              Future of Fashion
+            </span>
+            <span className="opacity-0">
+              Experience the
+              <br />
+              Future of Fashion
+            </span>
           </h1>
           
 
           {/* Buttons - Stack Vertically on Small Screens */}
           <div className="flex flex-col sm:flex-row justify-center gap-4 mt-6 w-full max-w-[500px]">
             <button className="bg-white/80 text-black rounded-lg px-4 py-2 sm:px-6 sm:py-3 hover:bg-white/90 transition shadow-md w-full sm:w-auto">
-              View My Dashboard
+              Start Journey
             </button>
             
           </div>

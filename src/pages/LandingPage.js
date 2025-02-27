@@ -58,6 +58,10 @@ const LandingPage = () => {
         console.log("View All Photos button clicked");
     };
     
+    const landingPageNavItems = [
+        { label: "Login", path: "/login" },
+        { label: "Get Started", path: "/signup"}
+    ];
 
     return (
         <div>
@@ -99,7 +103,7 @@ const LandingPage = () => {
 
                 {/* Content overlaid on video */}
                 <div style={{ position: 'relative', zIndex: 1 }}>
-                    <Navbar />
+                    <Navbar navItems={landingPageNavItems} />
                     <LpHero />
                     <HeroBanner />
                 </div>
@@ -116,24 +120,32 @@ const LandingPage = () => {
                 
                 <div>
                     <CollectionPreview 
-                        title="Your Personal Style Journey"
-                        subtitle="Discover your unique style"
+                        title="Designed by our Team to Accentuate your Figure"
+                        subtitle="A glimpse into our collection"
                         buttons={[
                             {
-                                text: "Upload More Photos",
-                                onClick: () => handleUpload()
+                                text: "See All",
+                                onClick: () => handleUpload(),
+                                color: "bg-[#22272A]",
+                                textColor: "text-[#FFFFFF]"
                             },
                             {
-                                text: "Take Photo",
-                                onClick: () => handleTakePhoto()
+                                text: "Dresses",
+                                onClick: () => handleTakePhoto(),
+                                color: "bg-[#FFFFFF]",
+                                textColor: "text-[#22272A]"
                             },
                             {
-                                text: "Choose from Gallery",
-                                onClick: () => handleGallerySelect()
+                                text: "Short",
+                                onClick: () => handleGallerySelect(),
+                                color: "bg-[#FFFFFF]",
+                                textColor: "text-[#22272A]"
                             },
                             {
-                                text: "View All Photos",
-                                onClick: () => handleViewAll()
+                                text: "Pant",
+                                onClick: () => handleViewAll(),
+                                color: "bg-[#FFFFFF]",
+                                textColor: "text-[#22272A]"
                             }
                         ]}
                         products={products}

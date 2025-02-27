@@ -20,9 +20,9 @@ const HouseSection = ({ imageOnRight, title, description, buttonText, image }) =
             viewport={{ margin: "-100px" }}
             transition={{ duration: 0.6, delay: 0.2 }}
             exit={{ opacity: 0, x: imageOnRight ? -50 : 50 }}
-            className="w-full md:max-w-[380px] mt-8 md:mt-0 text-center"
+            className="w-full md:max-w-[380px] mt-8 md:mt-0 text-left"
           >
-            <h2 className="text-2xl md:text-3xl font-medium mb-3">
+            <h2 className="text-[32px] md:text-3xl font-bold mb-6">
               {title.split('\n').map((line, i) => (
                 <React.Fragment key={i}>
                   {line}
@@ -30,11 +30,16 @@ const HouseSection = ({ imageOnRight, title, description, buttonText, image }) =
                 </React.Fragment>
               ))}
             </h2>
-            <p className="text-gray-600 mb-6 md:mb-8 leading-normal text-base max-w-[320px] mx-auto">
+            <p className="text-[#797979] mb-6 md:mb-12 leading-[20px] text-base font-normal max-w-[320px]">
               {description}
             </p>
-            <button className="bg-[#181A1B] text-white px-6 py-3 rounded-lg hover:bg-gray-800 transition-colors text-base w-full md:w-auto">
-              {buttonText}
+            <button className="bg-[#181A1B] text-white px-6 py-3 rounded-lg hover:bg-gray-800 transition-colors text-base w-full md:w-auto text-left">
+              {buttonText.split('\n').map((line, i) => (
+                <React.Fragment key={i}>
+                  {line}
+                  {i < buttonText.split('\n').length - 1 && <br />}
+                </React.Fragment>
+              ))}
             </button>
           </motion.div>
 
@@ -47,7 +52,7 @@ const HouseSection = ({ imageOnRight, title, description, buttonText, image }) =
             exit={{ opacity: 0, x: imageOnRight ? 50 : -50 }}
             className="w-full md:w-auto"
           >
-            <div className="rounded-3xl overflow-hidden shadow-xl h-[300px] md:h-[565px] w-full md:w-[468px]">
+            <div className="rounded-2xl overflow-hidden shadow-xl h-[627px] w-[515px]">
               <img 
                 src={image} 
                 alt="Section Image" 

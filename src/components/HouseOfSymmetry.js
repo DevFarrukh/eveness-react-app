@@ -16,23 +16,23 @@ const HouseOfSymmetry   = () => {
     },
     {
       imageOnRight: false,
-      title: "The House of\nStyle",
-      description: "Discover your unique style identity through our curated collection of fashion pieces that speak to your personality.",
-      buttonText: "Find My Style",
+      title: "Personalized \nFashion Dashboard",
+      description: "Learn the best colors, silhouettes, and necklines based on your Color Analysis, Face, and Body Shape. ",
+      buttonText: "Explore Color Analysis and \nAccentuate my Figure",
       image: secondImage
     },
     {
       imageOnRight: true,
-      title: "The House of\nElegance",
-      description: "Every detail matters in creating a look that's uniquely yours. We help you master the art of refined fashion.",
-      buttonText: "Explore Elegance",
+      title: "Eveness \nMarketplace",
+      description: "The Eveness Algorithm expanded to more than the collection. Shop from a variety of brands with our help pieces that highlight you.",
+      buttonText: "Access My Marketplace",
       image: thirdImage
     },
     {
       imageOnRight: false,
-      title: "The House of\nConfidence",
-      description: "When your outfit perfectly matches your vision, confidence naturally follows. Let us help you find that perfect match.",
-      buttonText: "Boost Confidence",
+      title: "Eveness GPT",
+      description: "The Eveness GPT is your on the go fashion stylist. Find out whether a garment matches your features and how to style it.",
+      buttonText: "My Personal AI Stylist",
       image: fourthImage
     }
   ];

@@ -2,12 +2,12 @@ import React, { useState } from "react";
 import { Link } from "react-router-dom";
 import evenessLogo from '../assets/eveness-logo.png';
 
-const Navbar = () => {
+const Navbar = ({ navItems }) => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
 
   return (
     <div className="fixed top-0 left-0 w-full z-50">
-      <nav className="max-w-[1400px] mx-auto px-6 py-4 flex justify-between items-center">
+      <nav className=" mx-auto px-6 py-4 flex justify-between items-center">
         
         {/* Logo Container */}
         <Link to="/" className="bg-white/80 backdrop-blur-lg rounded-lg py-2 px-4 flex items-center gap-2">
@@ -17,12 +17,19 @@ const Navbar = () => {
 
         {/* Menu Links */}
         <div className="hidden md:flex items-center gap-6 bg-white/80 backdrop-blur-lg rounded-lg py-2 px-4">
-          <Link to="/home" className="text-black font-medium">Home</Link>
-          <Link to="/dashboard" className="text-gray-500 hover:text-black">Dashboard</Link>
-          <Link to="/shop" className="text-gray-500 hover:text-black">Shop</Link>
-          <Link to="/magazine" className="text-gray-500 hover:text-black">Magazine</Link>
-          <Link to="/account" className="text-gray-500 hover:text-black">Account</Link>
-          <Link to="/cart" className="text-gray-500 hover:text-black">Cart</Link>
+          {navItems.map((item, index) => (
+            <Link
+              key={index}
+              to={item.path}
+              className={`${
+                item.isButton 
+                  ? "bg-black text-white px-4 py-2 rounded-lg hover:bg-gray-800"
+                  : "text-gray-500 hover:text-black"
+              }`}
+            >
+              {item.label}
+            </Link>
+          ))}
         </div>
 
         {/* Mobile Menu Button */}
@@ -42,12 +49,19 @@ const Navbar = () => {
       {isMenuOpen && (
         <div className="md:hidden bg-white/80 backdrop-blur-lg mt-2 mx-6 rounded-lg p-4">
           <div className="flex flex-col gap-4">
-            <Link to="/home" className="text-black font-medium">Home</Link>
-            <Link to="/dashboard" className="text-gray-500 hover:text-black">Dashboard</Link>
-            <Link to="/shop" className="text-gray-500 hover:text-black">Shop</Link>
-            <Link to="/magazine" className="text-gray-500 hover:text-black">Magazine</Link>
-            <Link to="/account" className="text-gray-500 hover:text-black">Account</Link>
-            <Link to="/cart" className="text-gray-500 hover:text-black">Cart</Link>
+            {navItems.map((item, index) => (
+              <Link
+                key={index}
+                to={item.path}
+                className={`${
+                  item.isButton 
+                    ? "bg-black text-white px-4 py-2 rounded-lg hover:bg-gray-800"
+                    : "text-gray-500 hover:text-black"
+                }`}
+              >
+                {item.label}
+              </Link>
+            ))}
           </div>
         </div>
       )}

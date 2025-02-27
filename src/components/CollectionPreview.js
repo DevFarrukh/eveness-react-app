@@ -1,18 +1,13 @@
 import React from "react";
 
 const CollectionPreview = ({ 
-  title = "Designed by our Team to Accentuate your Figure",
-  subtitle = "A glimpse into our collection",
-  buttons = [
-    {
-      text: "View Full Collection",
-      onClick: () => {},
-    }
-  ],
+  title = title,
+  subtitle = subtitle,
+  buttons = buttons,
   products 
 }) => {
   return (
-    <div className="max-w-[1446px] mx-auto px-4 sm:px-6 mt-12">
+    <div className="max-w-[1446px] mx-auto px-4 sm:px-6 mt-60">
       {/* Heading Section */}
       <div className="text-left mb-8">
         <h2 className="text-3xl sm:text-4xl font-bold text-black">
@@ -26,7 +21,7 @@ const CollectionPreview = ({
             <button 
               key={index}
               onClick={button.onClick}
-              className="bg-black text-white px-3 sm:px-6 py-2.5 rounded-lg hover:bg-gray-800 transition text-base whitespace-nowrap flex-shrink-0"
+              className={`${button.color || 'bg-black'} ${button.textColor || 'bg-white'} px-3 sm:px-6 py-2.5 rounded-lg hover:opacity-90 transition text-base whitespace-nowrap flex-shrink-0`}
             >
               {button.text}
             </button>
@@ -36,7 +31,7 @@ const CollectionPreview = ({
 
       {/* Scrollable Cards Container */}
       <div 
-        className="overflow-x-auto scrollbar-hide"
+        className="overflow-x-auto scrollbar-hide mt-12 mb-16 py-16"
       >
         <div className="flex gap-6">
           {products.map((product, index) => (
@@ -52,7 +47,7 @@ const CollectionPreview = ({
                 />
 
                 {/* Match Percentage Badge with Blur Effect */}
-                <div className="absolute bottom-4 left-4 px-3 py-1 text-xs font-semibold text-black bg-white/50 backdrop-blur-lg rounded-full">
+                <div className="absolute bottom-4 left-4 w-32 h-[38px] flex items-center justify-center text-xs font-semibold text-black bg-white/50 backdrop-blur-lg rounded-[50px]">
                   {product.match} Match
                 </div>
               </div>

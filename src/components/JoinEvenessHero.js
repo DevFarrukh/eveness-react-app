@@ -5,8 +5,8 @@ const JoinEvenessHero = () => {
   return (
     <div className="relative flex items-center justify-center pt-20 px-4 ">
       {/* Video Background Container */}
-      <div className="relative w-full sm:w-[1447px] h-[500px] sm:h-[546px] rounded-[16px] overflow-hidden shadow-lg flex items-center justify-center 
-                      sm:max-w-[1447px] max-w-[358px] max-h-[553px]">
+      <div className="relative w-full sm:w-[1249px] h-[500px] sm:h-[650px] rounded-[16px] overflow-hidden shadow-lg flex items-center justify-center 
+                      sm:max-w-[1249px] max-w-[358px] max-h-[650px]">
         <video 
           autoPlay 
           loop 
@@ -29,14 +29,14 @@ const JoinEvenessHero = () => {
           }}
         >
           {/* Heading */}
-          <h2 className="text-lg sm:text-4xl font-semibold text-black leading-tight sm:leading-normal">
+          <h2 className="text-lg sm:text-[30px] font-medium text-black leading-[37.5px] text-center font-poppins tracking-[0%]">
             Experience our ecosystem where luxury<br className="hidden sm:inline"/> fashion meets user-focused technology
           </h2>
 
           {/* Buttons - Adjusted for Mobile */}
           <div className="flex flex-col sm:flex-row justify-center gap-4 mt-6 w-full max-w-[500px]">
-            <button className="bg-black text-white rounded-lg px-4 py-2 sm:px-6 sm:py-3 hover:bg-black/90 transition shadow-md 
-                               w-full sm:w-auto max-w-[358px] sm:max-w-none">
+            <button className="bg-[#22272A] text-white rounded-lg px-4 py-2 sm:w-[146px] sm:h-[39px] hover:bg-[#22272A]/90 transition shadow-md 
+                               w-full sm:max-w-none rounded-[8px]">
               Join Eveness
             </button>
           </div>
