@@ -30,10 +30,10 @@ const TechnologySection = () => {
 
         {/* Typography section */}
         <div className="text-center max-w-[800px] mx-auto">
-          <h2 className="text-[32px] font-bold mb-8">
+          <h2 className="text-[28px] sm:text-[32px] font-bold mb-8">
             How We Personalize Fashion
           </h2>
-          <p className="text-[#797979] leading-relaxed text-[16px] font-medium text-justify">
+          <p className="text-[#797979] leading-relaxed text-[16px] font-medium text-center">
             Our Fashion Ecosystem Blends the User-Focused Nature of Tech with Our Love for Fashion. Experience New Ways to Accentuate your Favorite Parts of Yourself. We Build our Tech to Democratize Personal Styling Services and Remind the Industry that the User comes First.
           </p>
         </div>

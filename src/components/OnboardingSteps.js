@@ -7,7 +7,7 @@ const OnboardingSteps = () => {
       <div className="w-full py-20 md:py-40 px-4 ">
         <div className="max-w-[1280px] mx-auto">
           <div className="overflow-x-auto">
-            <h2 className="text-center text-[32px] font-bold mx-auto leading-[1.25] text-[#1E1E1E] whitespace-nowrap mb-4 md:mb-6">
+            <h2 className="text-center text-[22px] md:text-[32px] font-bold mx-auto leading-[1.25] text-[#1E1E1E] mb-4 md:mb-6">
               To access our Collection, Marketplace, Fashion GPT, and Recommendations
             </h2>
           </div>

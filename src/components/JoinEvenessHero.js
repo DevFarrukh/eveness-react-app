@@ -29,14 +29,14 @@ const JoinEvenessHero = () => {
           }}
         >
           {/* Heading */}
-          <h2 className="text-lg sm:text-[30px] font-medium text-black leading-[37.5px] text-center font-poppins tracking-[0%]">
+          <h2 className="text-[26px] font-bold leading-[28px] sm:text-[30px] sm:font-medium sm:leading-[37.5px] text-black text-center font-poppins tracking-[0%]">
             Experience our ecosystem where luxury<br className="hidden sm:inline"/> fashion meets user-focused technology
           </h2>
 
           {/* Buttons - Adjusted for Mobile */}
-          <div className="flex flex-col sm:flex-row justify-center gap-4 mt-6 w-full max-w-[500px]">
-            <button className="bg-[#22272A] text-white rounded-lg px-4 py-2 sm:w-[146px] sm:h-[39px] hover:bg-[#22272A]/90 transition shadow-md 
-                               w-full sm:max-w-none rounded-[8px]">
+          <div className="flex flex-col sm:flex-row items-center justify-center gap-4 mt-6 w-full max-w-[500px]">
+            <button className="w-[134px] h-[38px] bg-[#22272A] text-white rounded-lg px-4 py-2 sm:w-[146px] sm:h-[39px] hover:bg-[#22272A]/90 transition shadow-md 
+                               rounded-[8px]">
               Join Eveness
             </button>
           </div>
