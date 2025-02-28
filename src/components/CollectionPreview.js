@@ -47,8 +47,8 @@ const CollectionPreview = ({
                 />
 
                 {/* Match Percentage Badge with Blur Effect */}
-                <div className="absolute bottom-4 left-4 w-32 h-[38px] flex items-center justify-center text-xs font-semibold text-black bg-white/50 backdrop-blur-lg rounded-[50px]">
-                  {product.match} Match
+                <div className="absolute bottom-4 left-4 w-32 h-[38px] flex items-center justify-center text-xs text-black bg-white/50 backdrop-blur-lg rounded-[11px]">
+                  <span className="font-semibold">{product.match}</span><span className="ml-1">Match</span>
                 </div>
               </div>
 

@@ -4,7 +4,7 @@ const TechnologySection = () => {
   return (
     <div className="w-full px-4 pt-40 pb-40">
       <div className="max-w-[1280px] mx-auto">
-        <div className="rounded-3xl overflow-hidden relative h-[600px] mb-60">
+        <div className="rounded-[16px] overflow-hidden relative h-[708px] mb-60">
           {/* Full width image */}
           <img 
             src={technologyImage} 
@@ -14,7 +14,7 @@ const TechnologySection = () => {
           
           {/* Floating content card */}
           <div className="relative mt-[-380px] sm:mt-[-40px] z-10 flex justify-center sm:justify-start sm:absolute sm:right-16 sm:top-[70%] sm:-translate-y-1/2 p-4 sm:p-0">
-            <div className="bg-white/80 backdrop-blur-lg rounded-3xl p-8 max-w-[580px]">
+            <div className="bg-white/80 backdrop-blur-lg rounded-[20px] p-8 w-full sm:w-[590px] h-[330px]">
               <h2 className="text-[22px] sm:text-3xl font-bold mb-3 sm:mb-4 leading-tight">
                 Technology that Accentuates Your Beauty
               </h2>

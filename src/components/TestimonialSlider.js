@@ -20,7 +20,7 @@ const TestimonialSlider = () => {
   return (
     <div className="w-full py-24 mt-32 ">
       <div className="max-w-[1400px] mx-auto px-4 md:px-1 text-center">
-        <h2 className="font-['Mollen_Personal_Use'] text-[28px] md:text-[40px] leading-[32px] md:leading-[42px] font-bold mb-6 md:mb-4">
+        <h2 className="text-[24px] md:text-[32px] leading-[32px] md:leading-[40px] font-[700] text-center tracking-[0%] mb-6 md:mb-4">
           Reinstate Innovation in the Fashion Industry with Eveness
         </h2>
         <p className="text-gray-600 mb-8 md:mb-4 text-sm md:text-base">The Most User-Focused Fashion Home</p>
@@ -39,7 +39,7 @@ const TestimonialSlider = () => {
           
           <div className="px-8 md:px-16">
             <p className="text-base md:text-lg mb-6 md:mb-8 leading-relaxed">
-              {testimonials[currentSlide].quote}
+              "{testimonials[currentSlide].quote}"
             </p>
             <p className="font-bold text-sm md:text-base">{testimonials[currentSlide].author}</p>
             <p className="text-gray-600 text-xs md:text-base">{testimonials[currentSlide].title}</p>
