@@ -42,6 +42,16 @@ const Home = () => {
       price: "$660",
     },
   ];
+
+  const homePageNavItems = [
+    { label: "Home", path: "/home" },
+    { label: "Dashboard", path: "/dashboard"},
+    { label: "Shop", path: "/shop"},
+    { label: "Magazine", path: "/magazine"},
+    { label: "Account", path: "/account"},
+    { label: "Cart", path: "/cart"},
+  ];
+
   const handleCollectionClick = () => {
     console.log("View Full Collection button clicked");
   };
@@ -70,7 +80,7 @@ const Home = () => {
 
       {/* Content */}
       <div className="relative z-10">
-        <Navbar />
+        <Navbar navItems={homePageNavItems}/>
         <div className="px-4 md:px-1 mt-16 max-w-[1400px] mx-auto space-y-8 md:space-y-16 pb-16">
           <Hero />
           <StylingAnalysis />
