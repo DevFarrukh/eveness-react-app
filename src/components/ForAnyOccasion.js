@@ -13,14 +13,14 @@ const ForAnyOccasion = () => {
   ];
 
   return (
-    <div className="max-w-[1446px] mx-auto px-4 sm:px-6 mt-8 sm:mt-12">
+    <div className="max-w-[1446px] mx-auto px-4 sm:px-6 mt-60 sm:mt-60 sm:mb-60 mb-60">
       {/* Heading Section */}
-      <div className="text-left mb-6 sm:mb-8">
-        <h2 className="text-2xl sm:text-3xl font-bold text-black">For Any Occasion</h2>
+      <div className="text-left mb-12 sm:mb-16">
+        <h2 className="text-2xl sm:text-[30px] sm:leading-[32px] font-bold text-black tracking-[0%]">For Any Occasion</h2>
         <p className="text-sm sm:text-base text-gray-600 mt-1">
           From Jeans to Eyewear, Find The Fashion Piece That Accentuates Your Favorite Parts of Yourself
         </p>
-        <button className="mt-3 sm:mt-4 bg-black text-white px-4 sm:px-6 py-2 sm:py-3 rounded-lg hover:bg-gray-800 transition text-sm sm:text-base">
+        <button className="mt-3 sm:mt-8 bg-[#22272A] text-white px-4 sm:px-6 py-2 sm:py-3 rounded-lg hover:bg-gray-800 transition text-sm sm:text-base">
           Visit Marketplace
         </button>
       </div>
@@ -30,7 +30,7 @@ const ForAnyOccasion = () => {
         {products.map((product, index) => (
           <div 
             key={index} 
-            className="relative w-full h-[300px] sm:h-[350px] lg:h-[402px] rounded-[12px] overflow-visible shadow-lg"
+            className="relative w-[336px] h-[402px] rounded-[12px] overflow-visible shadow-lg"
           >
             {/* Image */}
             <img
@@ -41,7 +41,7 @@ const ForAnyOccasion = () => {
             
             {/* Floating Button */}
             <div className="absolute bottom-[-20px] sm:bottom-[-24px] left-1/2 transform -translate-x-1/2 
-                            bg-white/70 backdrop-blur-lg w-[140px] sm:w-[180px] h-[40px] sm:h-[48px] text-xs sm:text-sm font-medium 
+                            bg-white/70 backdrop-blur-lg w-[180.8px] h-[48.8px] text-xs sm:text-sm font-medium 
                             flex items-center justify-center rounded-[8.8px] shadow-lg border border-white">
               {product.name}
             </div>
@@ -50,11 +50,11 @@ const ForAnyOccasion = () => {
       </div>
 
       {/* Mobile Scrollable Layout */}
-      <div className="md:hidden flex gap-2 overflow-x-auto scrollbar-hide px-2 py-4">
+      <div className="md:hidden flex gap-2 overflow-x-auto scrollbar-hide px-2 py-4 snap-x snap-mandatory">
         {products.map((product, index) => (
           <div 
             key={index} 
-            className="relative min-w-[200px] h-[250px] rounded-[12px] overflow-visible shadow-lg flex-shrink-0"
+            className="relative min-w-[200px] h-[250px] rounded-[12px] overflow-visible shadow-lg flex-shrink-0 snap-center"
           >
             {/* Image */}
             <img

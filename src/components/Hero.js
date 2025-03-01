@@ -4,7 +4,7 @@ import blurBackground from '../assets/blur-rectangle.png'; // Import blur effect
 
 const Hero = () => {
   return (
-    <div className="relative flex items-center justify-center pt-20 px-4">
+    <div className="relative flex items-center justify-center pt-44 px-4">
       {/* Video Background */}
       <div className="relative w-full sm:w-[1447px] h-[500px] sm:h-[546px] rounded-[16px] overflow-hidden shadow-lg flex items-center justify-center">
         <video 

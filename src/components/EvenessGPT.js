@@ -1,8 +1,9 @@
 import React from "react";
-
+import pencilIcon from "../assets/pencil-icon.png";
+import bulbIcon from "../assets/bulb-icon.png";
 const EvenessGPT = () => {
   return (
-    <div className="flex justify-center mt-12 px-0 w-full">
+    <div className="flex justify-center mt-60 mb-20 md:mb-20 px-0 w-full">
       <style>
         {`
           @keyframes gradient {
@@ -85,17 +86,23 @@ const EvenessGPT = () => {
       </style>
       {/* Main Container - Full Width on Mobile */}
       <div 
-        className="w-full md:max-w-[1375px] md:rounded-[16px] shadow-2xl flex flex-col items-center justify-center relative p-6 md:p-12"
+        className="w-full md:max-w-[1375px] md:rounded-[16px] shadow-2xl flex flex-col items-center justify-center relative p-4 pb-12 md:p-12"
         style={{
           boxShadow: "0px 0px 139.7px 0px #0000001A",
-          width: "100%",  // Full width on mobile
+          width: "100%",
+          height: "auto",
+          borderRadius: "0px",
+          "@media (min-width: 768px)": {
+            width: "1375px",
+            height: "744px",
+            borderRadius: "16px",
+          }
         }}
       >
         {/* Inner Blurred Section */}
         <div 
-          className="animated-gradient w-full h-auto min-h-[600px] md:h-[448px] p-6 flex flex-col items-start justify-start relative overflow-hidden"
+          className="animated-gradient w-full md:w-[1275px] h-[500px] md:h-[448px] p-4 md:p-6 flex flex-col items-start justify-start relative overflow-hidden rounded-none md:rounded-2xl"
           style={{
-            borderRadius: "16px",
             backgroundColor: "rgba(255, 255, 255, 0.15)",
           }}
         >
@@ -118,30 +125,39 @@ const EvenessGPT = () => {
           }}/>
 
           {/* Floating Chat Bubbles */}
-          <div className="relative w-full mb-8 md:mb-0 mt-8">
-            <div className="absolute left-4 px-4 py-3 rounded-[20px] shadow-sm text-sm max-w-[250px]" 
+          <div className="relative w-full mb-8 md:mb-0 mt-4 md:mt-8">
+            <div className="absolute left-4 md:left-24 top-0 md:top-16 px-3 md:px-4 py-2 md:py-3 rounded-[13px] shadow-sm text-xs md:text-sm" 
+              style={{ 
+                border: "1px solid rgba(174, 174, 174, 1)",
+                background: "rgba(225, 225, 225, 0.95)",
+                width: "120px",
+                height: "auto",
+                "@media (min-width: 768px)": {
+                  width: "155px",
+                  height: "84px"
+                }
+              }}>
+              <img src={pencilIcon} alt="pencil" className="inline-block w-4 h-4 mr-1" /> <br/>Does this dress suit me?
+            </div>
+            <div className="absolute top-0 right-4 md:right-24 px-3 md:px-4 py-2 md:py-3 rounded-[20px] shadow-sm text-xs md:text-sm max-w-[150px] md:max-w-[200px]"
               style={{ 
                 border: "1px solid rgba(174, 174, 174, 1)",
                 background: "rgba(225, 225, 225, 0.95)"
               }}>
-              💡 What do I wear with this little black dress?
-            </div>
-            <div className="absolute top-20 right-4 px-4 py-3 rounded-[20px] shadow-sm text-sm max-w-[200px]"
-              style={{ 
-                border: "1px solid rgba(174, 174, 174, 1)",
-                background: "rgba(225, 225, 225, 0.95)"
-              }}>
-              💖 Does this dress suit me?
-            </div>
+              <img src={bulbIcon} alt="bulb" className="inline-block w-4 h-4 mr-1" /> <br/>What do I wear with this little black dress?</div>
           </div>
 
           {/* Centered Content */}
           <div className="text-center w-full mt-auto mb-auto">
-            <h2 className="text-2xl font-medium tracking-wide">EVENESS GPT</h2>
-            <h1 className="text-2xl font-normal mt-4">What can I help you with ?</h1>
+            <h2 className="text-center font-gopher font-light text-[20px] md:text-[26px] leading-[30px] md:leading-[38px] tracking-[0%] text-white">
+              EVENESS GPT
+            </h2>
+            <h1 className="text-center font-poppins font-medium text-[24px] md:text-[36px] leading-[30px] md:leading-[38px] tracking-[0%] mt-2 md:mt-4 text[#22272A]">
+              What can I help you with ?
+            </h1>
 
             {/* Action Buttons */}
-            <div className="mt-6 flex flex-row justify-center gap-3 w-full px-4 md:px-0">
+            <div className="mt-8 md:mt-12 flex flex-row justify-center gap-2 md:gap-3 w-full px-2 md:px-4">
               {/* Upload button - Text hidden on mobile */}
               <button className="input-container px-4 py-3 flex items-center gap-2 text-white/90 hover:bg-[rgba(85,85,85,0.4)] transition">
                 <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2">
@@ -170,13 +186,16 @@ const EvenessGPT = () => {
         </div>
 
         {/* Bottom Call-to-Action */}
-        <div className="text-center mt-8 w-full">
-          <h3 className="text-xl font-semibold">Powered by your Features</h3>
-          <p className="text-gray-600 mt-2">Ask me anything fashion related</p>
-          <button className="mt-4 bg-black text-white px-6 py-3 rounded-xl hover:bg-gray-800 transition">
+        <div className="text-center mt-6 md:mt-12 w-full px-4 md:px-0">
+          <h3 className="text-xl md:text-[36px] font-semibold md:font-bold leading-[30px] md:leading-[38px] tracking-[0%]">
+            Powered by your Features
+          </h3>
+          <p className="mt-2 md:mt-8 font-poppins text-sm md:text-[16px] font-medium leading-[24px] md:leading-[30px] tracking-[0%] text-gray-600">
+            Ask me anything fashion related
+          </p>
+          <button className="mt-4 md:mt-8 bg-[#22272A] text-white px-4 md:px-6 py-2 md:py-3 rounded-xl hover:bg-gray-800 transition text-sm md:text-base">
             Open Eveness GPT
           </button>
-          <p className="text-gray-500 text-sm mt-4">@ eveness.ai</p>
         </div>
       </div>
     </div>
