@@ -30,7 +30,7 @@ const ForAnyOccasion = () => {
         {products.map((product, index) => (
           <div 
             key={index} 
-            className="relative w-[336px] h-[402px] rounded-[12px] overflow-visible shadow-lg"
+            className="relative w-full h-[402px] rounded-[12px] overflow-visible shadow-lg"
           >
             {/* Image */}
             <img

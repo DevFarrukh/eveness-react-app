@@ -76,7 +76,7 @@ const Home = () => {
   ];
 
   const homePageNavItems = [
-    { label: "Home", path: "/home" },
+    { label: "Home", path: "/home", textColor: "text-black" },
     { label: "Dashboard", path: "/dashboard"},
     { label: "Shop", path: "/shop"},
     { label: "Magazine", path: "/magazine"},
@@ -94,8 +94,7 @@ const Home = () => {
             <div style={{ position: 'relative' }}>
                 <div style={{ 
                     position: 'absolute',
-                    top: '-218px',
-                    left: '-503px',
+                    top: '-130px',
                     height: '1418px',
                     overflow: 'hidden',
                     zIndex: 0
@@ -121,7 +120,8 @@ const Home = () => {
                         left: 0,
                         width: '100%',
                         height: '100%',
-                        background: 'linear-gradient(180deg, rgba(252, 247, 243, 0) 0%, rgba(252, 247, 243, 0) 95%, #FCF7F3 98%)'
+                        background: '#FCF7F38F',  // Updated color with opacity
+                        background: 'linear-gradient(180deg, rgba(252, 247, 243, 0.56) 0%, rgba(252, 247, 243, 0.56) 95%, #FCF7F3 98%)'
                     }}></div>
                 </div>
 
