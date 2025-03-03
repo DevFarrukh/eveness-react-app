@@ -105,8 +105,8 @@ const LandingPage = () => {
                         bottom: 0,
                         left: 0,
                         width: '100%',
-                        height: '400px', // Keeping the gradual fade height
-                        background: 'linear-gradient(to bottom, rgba(252, 247, 243, 0) 0%, rgba(252, 247, 243, 0.3) 15%, var(--Oat-Milk, #FCF7F3) 85%)',
+                        height: '100%', // Full height
+                        background: 'linear-gradient(to bottom, rgba(252, 247, 243, 0) 0%, rgba(252, 247, 243, 0.0) 50%, var(--Oat-Milk, #FCF7F3) 85%)',
                         zIndex: 2
                     }}></div>
                 </div>
