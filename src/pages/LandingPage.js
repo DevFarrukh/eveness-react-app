@@ -84,9 +84,7 @@ const LandingPage = () => {
                         style={{
                             width: '100%',
                             height: '100%',
-                            objectFit: 'cover',
-                            filter: 'blur(15px)',
-                            transform: 'scale(1.1)'
+                            objectFit: 'cover'
                         }}
                     >
                         <source src={lpVideo} type="video/mp4" />
@@ -97,7 +95,19 @@ const LandingPage = () => {
                         left: 0,
                         width: '100%',
                         height: '100%',
-                        background: 'linear-gradient(180deg, rgba(252, 247, 243, 0.3) 0%, rgba(252, 247, 243, 0.6) 50%, rgba(239, 222, 211, 0.9) 100%)'
+                        background: '#FCF7F375',
+                        backdropFilter: 'blur(108.0999984741211px)',
+                        WebkitBackdropFilter: 'blur(108.0999984741211px)', // For Safari support
+                    }}></div>
+                    {/* Add bottom fade gradient */}
+                    <div style={{
+                        position: 'absolute',
+                        bottom: 0,
+                        left: 0,
+                        width: '100%',
+                        height: '400px', // Keeping the gradual fade height
+                        background: 'linear-gradient(to bottom, rgba(252, 247, 243, 0) 0%, rgba(252, 247, 243, 0.3) 15%, var(--Oat-Milk, #FCF7F3) 85%)',
+                        zIndex: 2
                     }}></div>
                 </div>
 
@@ -111,7 +121,7 @@ const LandingPage = () => {
 
             {/* Rest of the Components */}
             <div style={{ 
-                background: 'linear-gradient(180deg, rgba(239, 222, 211, 0.9) 0%, rgba(252, 247, 243, 1) 20%)',
+                background: 'var(--Oat-Milk, #FCF7F3)',
                 position: 'relative'
             }}>
                 <OnboardingSteps />
