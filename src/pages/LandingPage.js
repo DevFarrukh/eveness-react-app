@@ -97,17 +97,16 @@ const LandingPage = () => {
                         height: '100%',
                         background: '#FCF7F375',
                         backdropFilter: 'blur(108.0999984741211px)',
-                        WebkitBackdropFilter: 'blur(108.0999984741211px)', // For Safari support
+                        WebkitBackdropFilter: 'blur(108.0999984741211px)',
                     }}></div>
-                    {/* Add bottom fade gradient */}
                     <div style={{
                         position: 'absolute',
                         bottom: 0,
                         left: 0,
                         width: '100%',
-                        height: '100%', // Full height
-                        background: 'linear-gradient(to bottom, rgba(252, 247, 243, 0) 0%, rgba(252, 247, 243, 0.0) 50%, var(--Oat-Milk, #FCF7F3) 85%)',
-                        zIndex: 2
+                        height: '200%',
+                        background: 'linear-gradient(to bottom, rgba(252, 247, 243, 0) 0%, rgba(252, 247, 243, 0.0) 70%, var(--Oat-Milk, #FCF7F3) 80%)',
+                        zIndex: 10 // Increased z-index
                     }}></div>
                 </div>
 
@@ -122,7 +121,8 @@ const LandingPage = () => {
             {/* Rest of the Components */}
             <div style={{ 
                 background: 'var(--Oat-Milk, #FCF7F3)',
-                position: 'relative'
+                position: 'relative',
+                zIndex: 1 // Lower than the gradient
             }}>
                 <OnboardingSteps />
                 <TechnologySection />
