@@ -120,8 +120,7 @@ const Home = () => {
                         left: 0,
                         width: '100%',
                         height: '100%',
-                        background: '#FCF7F38F',  // Updated color with opacity
-                        background: 'linear-gradient(180deg, rgba(252, 247, 243, 0.56) 0%, rgba(252, 247, 243, 0.56) 95%, #FCF7F3 98%)'
+                        background: 'linear-gradient(180deg, rgba(252, 247, 243, 0.56) 0%, rgba(252, 247, 243, 0.56) 85%, rgba(252, 247, 243, 0.75) 92%, rgba(252, 247, 243, 0.9) 96%, #FCF7F3 100%)'
                     }}></div>
                 </div>
 
