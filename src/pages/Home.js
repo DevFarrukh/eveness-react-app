@@ -4,85 +4,12 @@ import Hero from "../components/Hero";
 import StylingAnalysis from "../components/StylingAnalysis";
 import CollectionPreview from "../components/CollectionPreview";
 import EvenessGPT from "../components/EvenessGPT";
-import ForAnyOccasion from "../components/ForAnyOccasion";
+import MarketplacePreview from "../components/MarketplacePreview";
 import Footer from "../components/Footer";
 import heroVideo from "../assets/hero-bg-video.mp4"; // Use the same video as Hero.js
+import { products, marketplaceProducts, homePageNavItems } from "../data/mockData";
 
 const Home = () => {
-  const products = [
-    {
-      image: require("../assets/dress1.png"),
-      match: "90%",
-      name: "Short Dress with Bows",
-      price: "$660",
-    },
-    {
-      image: require("../assets/dress2.png"),
-      match: "85%",
-      name: "Ribbed Godet Dress",
-      price: "$660",
-    },
-    {
-      image: require("../assets/dress3.png"),
-      match: "92%",
-      name: "Starpless Midi Dress",
-      price: "$660",
-    },
-    {
-      image: require("../assets/dress4.png"),
-      match: "76%",
-      name: "Draped Midi Dress",
-      price: "$660",
-    },
-    {
-      image: require("../assets/dress4.png"),
-      match: "76%",
-      name: "Draped Midi Dress",
-      price: "$660",
-    },
-  ];
-
-  const marketplaceProducts = [
-    {
-      image: require("../assets/preview1.png"),
-      match: "90%",
-      name: "Short Dress with Bows",
-      price: "$660",
-    },
-    {
-      image: require("../assets/preview2.png"),
-      match: "85%",
-      name: "Ribbed Godet Dress",
-      price: "$660",
-    },
-    {
-      image: require("../assets/preview3.png"),
-      match: "92%",
-      name: "Starpless Midi Dress",
-      price: "$660",
-    },
-    {
-      image: require("../assets/preview4.png"),
-      match: "76%",
-      name: "Draped Midi Dress",
-      price: "$660",
-    },
-    {
-      image: require("../assets/preview4.png"),
-      match: "76%",
-      name: "Draped Midi Dress",
-      price: "$660",
-    },
-  ];
-
-  const homePageNavItems = [
-    { label: "Home", path: "/home", textColor: "text-black" },
-    { label: "Dashboard", path: "/dashboard"},
-    { label: "Shop", path: "/shop"},
-    { label: "Magazine", path: "/magazine"},
-    { label: "Account", path: "/account"},
-    { label: "Cart", path: "/cart"},
-  ];
 
   const handleCollectionClick = () => {
     console.log("View Full Collection button clicked");
@@ -134,7 +61,7 @@ const Home = () => {
 
             {/* Rest of the Components */}
             <div style={{ 
-                background: '#FCF7F3',  // Changed to Oat Milk color
+                background: '#FCF7F3',
                 position: 'relative'
             }}>
               <div>
@@ -169,7 +96,7 @@ const Home = () => {
                   />     
                 </div>
               <EvenessGPT />
-              <ForAnyOccasion />
+              <MarketplacePreview />
               <Footer />
             </div>
         </div>

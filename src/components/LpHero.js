@@ -1,6 +1,5 @@
 import React from "react";
 import heroVideo from '../assets/lp-video.mp4';
-import blurBackground from '../assets/blur-rectangle.png'; // Import blur effect image
 
 const LpHero = () => {
   return (

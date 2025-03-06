@@ -1,16 +1,7 @@
 import React from "react";
-
-const ForAnyOccasion = () => {
-  const products = [
-    { image: require("../assets/jeans.png"), name: "Jeans" },
-    { image: require("../assets/heels.png"), name: "Shoes" },
-    { image: require("../assets/bags.png"), name: "Bags" },
-    { image: require("../assets/eyewear.png"), name: "Eyewear" },
-    { image: require("../assets/heels.png"), name: "Shoes" },
-    { image: require("../assets/jeans.png"), name: "Jeans" },
-    { image: require("../assets/eyewear.png"), name: "Eyewear" },
-    { image: require("../assets/bags.png"), name: "Bags" },
-  ];
+import { marketplacePreviewProducts } from "../data/mockData";
+const MarketplacePreview = () => {
+  const products = marketplacePreviewProducts;
 
   return (
     <div className="max-w-[1446px] mx-auto px-4 sm:px-6 mt-60 sm:mt-60 sm:mb-60 mb-60">
@@ -76,4 +67,4 @@ const ForAnyOccasion = () => {
   );
 };
 
-export default ForAnyOccasion;
+export default MarketplacePreview;

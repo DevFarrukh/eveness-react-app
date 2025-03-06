@@ -1,7 +1,7 @@
 import React from "react";
 import { motion } from "framer-motion";
 
-const HouseSection = ({ imageOnRight, title, description, buttonText, image }) => {
+const BrandStorySection = ({ imageOnRight, title, description, buttonText, image }) => {
   return (
     <motion.div
       initial={{ opacity: 0, y: 50 }}
@@ -66,4 +66,4 @@ const HouseSection = ({ imageOnRight, title, description, buttonText, image }) =
   );
 };
 
-export default HouseSection; 
+export default BrandStorySection; 

@@ -1,19 +1,6 @@
 import React, { useState } from 'react';
-
+import { testimonials } from '../data/mockData';
 const TestimonialSlider = () => {
-  const testimonials = [
-    {
-      quote: "Our mission is to help people accentuate their beauty through fashion and technology, not to deceive customers into clearing our inventory. If we feel a garment of ours doesn't work with your figure or color analysis, our algorithm advises you not to purchase it. Each garment is crafted with the purpose of helping people accentuate their favorite parts of themselves. This can only happen if we start with you.",
-      author: "Amir Razipour",
-      title: "CEO and Founder"
-    },
-    {
-        quote: "Our mission is to help people accentuate their beauty through fashion and technology, not to deceive customers into clearing our inventory. If we feel a garment of ours doesn't work with your figure or color analysis, our algorithm advises you not to purchase it. Each garment is crafted with the purpose of helping people accentuate their favorite parts of themselves. This can only happen if we start with you.",
-        author: "Farrukh Ahmed",
-        title: "CTO and Co-Founder"
-      },
-    // Add more testimonials here
-  ];
 
   const [currentSlide, setCurrentSlide] = useState(0);
 

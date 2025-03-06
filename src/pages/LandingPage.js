@@ -6,45 +6,14 @@ import Footer from "../components/Footer";
 import lpVideo from "../assets/lp-video.mp4"; 
 import OnboardingSteps from "../components/OnboardingSteps"; // Add this import
 import TechnologySection from "../components/TechnologySection";
-import HouseOfSymmetry from "../components/HouseOfSymmetry";
+import BrandStory from "../components/BrandStory";
 import CollectionPreview from "../components/CollectionPreview";
 import TestimonialSlider from "../components/TestimonialSlider";
 import JoinEvenessHero from "../components/JoinEvenessHero";
 import DashboardPreview from "../components/DashboardPreview";
-
+import { products } from "../data/mockData";
 const LandingPage = () => {
-    const products = [
-        {
-          image: require("../assets/dress1.png"),
-          match: "90%",
-          name: "Short Dress with Bows",
-          price: "$660",
-        },
-        {
-          image: require("../assets/dress2.png"),
-          match: "85%",
-          name: "Ribbed Godet Dress",
-          price: "$660",
-        },
-        {
-          image: require("../assets/dress3.png"),
-          match: "92%",
-          name: "Starpless Midi Dress",
-          price: "$660",
-        },
-        {
-          image: require("../assets/dress4.png"),
-          match: "76%",
-          name: "Draped Midi Dress",
-          price: "$660",
-        },
-        {
-          image: require("../assets/dress4.png"),
-          match: "76%",
-          name: "Draped Midi Dress",
-          price: "$660",
-        },
-    ];
+    
     const handleUpload = () => {
         console.log("Upload button clicked");
     };
@@ -106,7 +75,7 @@ const LandingPage = () => {
                         width: '100%',
                         height: '200%',
                         background: 'linear-gradient(to bottom, rgba(252, 247, 243, 0) 0%, rgba(252, 247, 243, 0.0) 70%, var(--Oat-Milk, #FCF7F3) 80%)',
-                        zIndex: 10 // Increased z-index
+                        zIndex: 10
                     }}></div>
                 </div>
 
@@ -122,11 +91,11 @@ const LandingPage = () => {
             <div style={{ 
                 background: 'var(--Oat-Milk, #FCF7F3)',
                 position: 'relative',
-                zIndex: 1 // Lower than the gradient
+                zIndex: 1
             }}>
                 <OnboardingSteps />
                 <TechnologySection />
-                <HouseOfSymmetry />
+                <BrandStory /> 
                 
                 <div>
                     <CollectionPreview 
