@@ -69,6 +69,11 @@ export const products = [
     },
   ];
 
+  export const landingPageNavItems = [
+    { label: "Login", path: "/login" },
+    { label: "Get Started", path: "/signup"}
+];
+
   export const homePageNavItems = [
     { label: "Home", path: "/home", textColor: "text-black" },
     { label: "Dashboard", path: "/dashboard"},

@@ -11,7 +11,7 @@ import CollectionPreview from "../components/CollectionPreview";
 import TestimonialSlider from "../components/TestimonialSlider";
 import JoinEvenessHero from "../components/JoinEvenessHero";
 import DashboardPreview from "../components/DashboardPreview";
-import { products } from "../data/mockData";
+import { products, landingPageNavItems } from "../data/mockData";
 const LandingPage = () => {
     
     const handleUpload = () => {
@@ -27,10 +27,7 @@ const LandingPage = () => {
         console.log("View All Photos button clicked");
     };
     
-    const landingPageNavItems = [
-        { label: "Login", path: "/login" },
-        { label: "Get Started", path: "/signup"}
-    ];
+    
 
     return (
         <div>
