@@ -42,7 +42,7 @@ const Quiz1 = () => {
   const [selectedType, setSelectedType] = useState(null)
 
   return (
-    <div className="mt-36 mx-auto">
+    <div className="max-w-[1446px] mt-36 mx-auto">
       <h1 className="w-[358px] md:w-[532px] text-[17px] md:text-[30px] font-bold leading-[28px] md:leading-[32px] tracking-[0%] text-center mx-auto mb-2 whitespace-nowrap  md:px-0">
         Which body-type best represents you?
       </h1>
