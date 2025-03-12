@@ -60,13 +60,7 @@ export const products = [
       match: "76%",
       name: "Draped Midi Dress",
       price: "$660",
-    },
-    {
-      image: require("../assets/preview4.png"),
-      match: "76%",
-      name: "Draped Midi Dress",
-      price: "$660",
-    },
+    }
   ];
 
   export const landingPageNavItems = [
