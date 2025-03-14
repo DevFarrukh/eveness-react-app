@@ -25,8 +25,8 @@ const Shop = () => {
     <div className=" relative min-h-screen bg-[#FCF7F3]">
       <Navbar navItems={[
         { label: "Home", path: "/home" },
-        { label: "Dashboard", path: "/dashboard" },
-        { label: "Shop", path: "/shop", textColor: "text-black" },
+        { label: "Dashboard", path: "/dashboard", hasDropdown: true },
+        { label: "Shop", path: "/shop" },
         { label: "Magazine", path: "/magazine" },
         { label: "Account", path: "/account" },
         { label: "Cart", path: "/cart" }

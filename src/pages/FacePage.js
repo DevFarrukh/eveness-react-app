@@ -13,7 +13,7 @@ const FacePage = () => {
     <div className="relative min-h-screen bg-[#FCF7F3]">
       <Navbar navItems={[
         { label: "Home", path: "/home" },
-        { label: "Dashboard", path: "/dashboard" },
+        { label: "Dashboard", path: "/", hasDropdown: true },
         { label: "Shop", path: "/shop" },
         { label: "Magazine", path: "/magazine" },
         { label: "Account", path: "/account" },
