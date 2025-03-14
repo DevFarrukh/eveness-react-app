@@ -6,60 +6,60 @@ import fourthImage from "../assets/wardrobe-interface4.jpeg";
 export const products = [
     {
       image: require("../assets/dress1.png"),
-      match: "90%",
+      match: "90",
       name: "Short Dress with Bows",
-      price: "$660",
+      price: "660",
     },
     {
       image: require("../assets/dress2.png"),
-      match: "85%",
+      match: "85",
       name: "Ribbed Godet Dress",
-      price: "$660",
+      price: "660",
     },
     {
       image: require("../assets/dress3.png"),
-      match: "92%",
+      match: "92",
       name: "Starpless Midi Dress",
-      price: "$660",
+      price: "660",
     },
     {
       image: require("../assets/dress4.png"),
-      match: "76%",
+      match: "76",
       name: "Draped Midi Dress",
-      price: "$660",
+      price: "660",
     },
     {
       image: require("../assets/dress4.png"),
-      match: "76%",
+      match: "76",
       name: "Draped Midi Dress",
-      price: "$660",
+      price: "660",
     },
   ];
 
   export const marketplaceProducts = [
     {
       image: require("../assets/preview1.png"),
-      match: "90%",
+      match: "90",
       name: "Short Dress with Bows",
-      price: "$660",
+      price: "660",
     },
     {
       image: require("../assets/preview2.png"),
-      match: "85%",
+      match: "85",
       name: "Ribbed Godet Dress",
-      price: "$660",
+      price: "660",
     },
     {
       image: require("../assets/preview3.png"),
-      match: "92%",
+      match: "92",
       name: "Starpless Midi Dress",
-      price: "$660",
+      price: "660",
     },
     {
       image: require("../assets/preview4.png"),
-      match: "76%",
+      match: "76",
       name: "Draped Midi Dress",
-      price: "$660",
+      price: "660",
     }
   ];
 

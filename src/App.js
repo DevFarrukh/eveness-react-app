@@ -9,6 +9,7 @@ import QuizPage from "./pages/QuizPage";
 import QuizPage2 from "./pages/QuizPage2";
 import QuizPage3 from "./pages/QuizPage3";
 import Shop from "./pages/Shop";
+import FacePage from "./pages/FacePage";
 function App() {
   return (
     <Router>
@@ -22,6 +23,7 @@ function App() {
         <Route path="/quiz2" element={<QuizPage2 />} />
         <Route path="/quiz3" element={<QuizPage3 />} />
         <Route path="/shop" element={<Shop />} />
+        <Route path="/face" element={<FacePage />} />
       </Routes>
   </Router>
   );

@@ -48,14 +48,14 @@ const CollectionPreview = ({
 
                 {/* Match Percentage Badge with Blur Effect */}
                 <div className="absolute bottom-4 left-4 w-32 h-[38px] flex items-center justify-center text-xs text-black bg-white/50 backdrop-blur-lg rounded-[11px]">
-                  <span className="font-semibold">{product.match}</span><span className="ml-1">Match</span>
+                  <span className="font-semibold">{product.match}%</span><span className="ml-1">Match</span>
                 </div>
               </div>
 
               {/* Product Details - Name & Price Outside */}
               <div className="mt-3 w-[300px] sm:w-[336px] flex justify-between">
                 <p className="text-sm sm:text-base text-black font-medium">{product.name}</p>
-                <p className="text-sm sm:text-base text-black font-semibold">{product.price}</p>
+                <p className="text-sm sm:text-base text-black font-semibold">${product.price}</p>
               </div>
             </div>
           ))}
