@@ -7,6 +7,7 @@ import facePageBackground from "../assets/face-picture-background.jpeg";
 import NecklinesSection from '../components/NecklinesSection';
 import { marketplaceProducts } from '../data/mockData';
 import ProductCardNarrow from '../components/ProductCardNarrow';
+import NecklineQuestion from '../components/NecklineQuestion';
 
 const FacePage = () => {
   return (
@@ -43,7 +44,6 @@ const FacePage = () => {
 
       {/* Content Container */}
       <div className="relative z-10">
-        {/* Hero Section - Remove px-8 */}
         <div className="pt-[120px]">
           <FaceHero />
         </div>
@@ -58,7 +58,10 @@ const FacePage = () => {
           <NecklinesSection />
         </div>
 
-        
+        {/* Neckline Question Section */}
+        <div className="mt-32 md:mt-48">
+          <NecklineQuestion />
+        </div>
         
         {/* Products Section */}
         <div className="max-w-[1446px] mx-auto mt-32 md:mt-72 mb-20 md:mb-40 px-4 md:px-0">
