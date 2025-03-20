@@ -159,8 +159,14 @@ const Quiz3 = () => {
             </div>
           </div>
           <div className="w-full md:flex-1">
-            <div className="flex items-center justify-between mb-2 md:ml-[40px]">
-              <label className="hidden md:block font-poppins font-normal text-[16px] leading-[150%] tracking-[0%] text-[#000000]">
+            <div className="flex items-center justify-between mb-2 md:ml-[40px] relative">
+              <span className="absolute -top-5 md:static left-0 text-[10px] text-[#797979] font-poppins md:flex md:items-center">
+                <label className="hidden md:block font-poppins font-normal text-[16px] leading-[150%] tracking-[0%] text-[#000000] mr-1">
+                  Inseam
+                </label>
+                (Optional)
+              </span>
+              <label className="hidden font-poppins font-normal text-[16px] leading-[150%] tracking-[0%] text-[#000000]">
                 Inseam
               </label>
               <input
