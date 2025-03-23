@@ -10,6 +10,8 @@ import QuizPage2 from "./pages/QuizPage2";
 import QuizPage3 from "./pages/QuizPage3";
 import Shop from "./pages/Shop";
 import FacePage from "./pages/FacePage";
+import Login from "./pages/Login";
+import CreateAccount from "./pages/CreateAccount";
 function App() {
   return (
     <Router>
@@ -24,6 +26,8 @@ function App() {
         <Route path="/quiz3" element={<QuizPage3 />} />
         <Route path="/shop" element={<Shop />} />
         <Route path="/face" element={<FacePage />} />
+        <Route path="/login" element={<Login />} />
+        <Route path="/create-account" element={<CreateAccount />} />
       </Routes>
   </Router>
   );
