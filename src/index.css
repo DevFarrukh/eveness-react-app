@@ -46,21 +46,28 @@
 
 @font-face {
   font-family: 'Mollen';
-  src: url('./fonts/Mollen-RegularPersonalUse.otf') format('otf');
+  src: url('./fonts/Mollen\ Personal\ Use-Light.otf') format('otf');
+  font-weight: 300;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Mollen';
+  src: url('./fonts/Mollen\ Personal\ Use-Regular.otf') format('otf');
   font-weight: 400;
   font-style: normal;
 }
 
 @font-face {
   font-family: 'Mollen';
-  src: url('./fonts/Mollen-BoldPersonalUse.otf') format('otf');
+  src: url('./fonts/Mollen\ Personal\ Use-Bold.otf') format('otf');
   font-weight: 700;
   font-style: normal;
 }
 
 body {
   margin: 0;
-  font-family: 'Poppins', -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+  font-family: 'Poppins', 'Mollen', -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
     'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
     sans-serif;
   -webkit-font-smoothing: antialiased;
