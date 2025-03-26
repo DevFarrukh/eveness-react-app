@@ -1,7 +1,7 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 import Navbar from '../components/Navbar';
-import { landingPageNavItems } from '../data/mockData';
+import { LoginPageNavItems  } from '../data/mockData';
 import createAccountImage from '../assets/create-account-left.png'; // You'll need to add this image
 import GoogleIcon from '../assets/google.svg';
 import AppleIcon from '../assets/apple.svg';
@@ -9,7 +9,7 @@ import AppleIcon from '../assets/apple.svg';
 const CreateAccount = () => {
   return (
     <div className="min-h-screen bg-[#EDE3DD]">
-      <Navbar navItems={landingPageNavItems}/>
+      <Navbar navItems={LoginPageNavItems}/>
       
       <div className="max-w-[1446px] mx-auto px-4 lg:px-[32px]">
         <div className="min-h-[calc(100vh-80px)] lg:min-h-0 flex items-center lg:items-start pt-[180px] lg:pt-[124px] lg:pb-[80px] gap-0 lg:gap-[30px] xl:gap-[90px] justify-center lg:justify-start">
@@ -59,16 +59,21 @@ const CreateAccount = () => {
                         className="w-full xl:w-[320px] h-[42px] px-4 rounded-[8px] bg-[#FFFFFF75] shadow-[0px_0px_16px_0px_#00000004] backdrop-blur-[36px] focus:outline-none focus:border-[#22272A] text-[14px]"
                       />
 
-                      <div className="w-full xl:w-[320px] flex gap-4">
-                        <select className="flex-1 h-[42px] px-4 rounded-[8px] bg-[#FFFFFF75] shadow-[0px_0px_16px_0px_#00000004] backdrop-blur-[36px] focus:outline-none focus:border-[#22272A] text-[14px] text-[#797979]">
-                          <option value="">Month</option>
-                        </select>
-                        <select className="flex-1 h-[42px] px-4 rounded-[8px] bg-[#FFFFFF75] shadow-[0px_0px_16px_0px_#00000004] backdrop-blur-[36px] focus:outline-none focus:border-[#22272A] text-[14px] text-[#797979]">
-                          <option value="">Date</option>
-                        </select>
-                        <select className="flex-1 h-[42px] px-4 rounded-[8px] bg-[#FFFFFF75] shadow-[0px_0px_16px_0px_#00000004] backdrop-blur-[36px] focus:outline-none focus:border-[#22272A] text-[14px] text-[#797979]">
-                          <option value="">Year</option>
-                        </select>
+                      <div className="w-full xl:w-[320px]">
+                        <label className="block font-['Poppins'] font-normal text-[14px] leading-[150%] tracking-[0%] text-[#797979A8] mb-2">
+                          Date of Birth
+                        </label>
+                        <div className="flex gap-4">
+                          <select className="flex-1 h-[42px] px-4 rounded-[8px] bg-[#FFFFFF75] shadow-[0px_0px_16px_0px_#00000004] backdrop-blur-[36px] focus:outline-none focus:border-[#22272A] text-[14px] text-[#797979]">
+                            <option value="">Month</option>
+                          </select>
+                          <select className="flex-1 h-[42px] px-4 rounded-[8px] bg-[#FFFFFF75] shadow-[0px_0px_16px_0px_#00000004] backdrop-blur-[36px] focus:outline-none focus:border-[#22272A] text-[14px] text-[#797979]">
+                            <option value="">Date</option>
+                          </select>
+                          <select className="flex-1 h-[42px] px-4 rounded-[8px] bg-[#FFFFFF75] shadow-[0px_0px_16px_0px_#00000004] backdrop-blur-[36px] focus:outline-none focus:border-[#22272A] text-[14px] text-[#797979]">
+                            <option value="">Year</option>
+                          </select>
+                        </div>
                       </div>
                     </div>
 

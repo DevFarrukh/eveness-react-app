@@ -77,6 +77,12 @@ export const products = [
     { label: "Cart", path: "/cart"},
   ];
 
+  export const LoginPageNavItems = [
+    { label: "Home", path: "/home"},
+    { label: "Login", path: "/login" },
+    { label: "Get Started", path: "/signup"}
+];
+
   export const brandStorySections = [
     {
       imageOnRight: true,
@@ -132,3 +138,5 @@ export const products = [
       },
     // Add more testimonials here
   ];
+
+  

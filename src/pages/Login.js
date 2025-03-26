@@ -1,7 +1,7 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 import Navbar from '../components/Navbar';
-import { landingPageNavItems } from '../data/mockData';
+import { LoginPageNavItems } from '../data/mockData';
 import loginImage from '../assets/login-left.jpeg';
 import  AppleIcon  from '../assets/apple.svg';
 import  GoogleIcon  from '../assets/google.svg';
@@ -9,11 +9,11 @@ const Login = () => {
   return (
     <div className="min-h-screen bg-[#EDE3DD]">
       {/* Navbar at the top */}
-      <Navbar navItems={landingPageNavItems}/>
+      <Navbar navItems={LoginPageNavItems}/>
       
       {/* Main container with max width */}
       <div className="max-w-[1446px] mx-auto px-4 lg:px-[32px]">
-        <div className="min-h-[calc(100vh-80px)] lg:min-h-0 flex items-center lg:items-start pt-[124px] lg:pb-[80px] gap-0 lg:gap-[30px] xl:gap-[90px] justify-center lg:justify-start">
+        <div className="min-h-[calc(100vh-80px)] lg:min-h-0 flex items-center lg:items-start pt-[124px] lg:pb-[40px] gap-0 lg:gap-[30px] xl:gap-[90px] justify-center lg:justify-start">
           {/* Left side - Image */}
           <div className="hidden lg:block">
             <div className="w-[500px] h-[600px] xl:w-[708px] xl:h-[822px]">
@@ -81,7 +81,7 @@ const Login = () => {
                       </div>
 
                       <div className="text-center text-[14px] text-[#797979]">
-                        Don't have an account ? <Link to="/create-account" className="text-[#22272A] font-medium">
+                        Don't have an account ? <Link to="/signup" className="text-[#22272A] font-medium">
                           Create Account
                         </Link>
                       </div>

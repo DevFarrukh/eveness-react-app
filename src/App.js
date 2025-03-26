@@ -12,6 +12,7 @@ import Shop from "./pages/Shop";
 import FacePage from "./pages/FacePage";
 import Login from "./pages/Login";
 import CreateAccount from "./pages/CreateAccount";
+import ProductDescription from "./pages/ProductDescription";
 function App() {
   return (
     <Router>
@@ -27,7 +28,8 @@ function App() {
         <Route path="/shop" element={<Shop />} />
         <Route path="/face" element={<FacePage />} />
         <Route path="/login" element={<Login />} />
-        <Route path="/create-account" element={<CreateAccount />} />
+        <Route path="/signup" element={<CreateAccount />} />
+        <Route path="/product-description" element={<ProductDescription />} />
       </Routes>
   </Router>
   );
