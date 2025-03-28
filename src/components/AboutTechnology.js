@@ -46,16 +46,18 @@ const AboutTechnology = () => {
               <div className="font-['Poppins'] font-normal text-[24px] sm:text-[18px] md:text-[20px] lg:text-[24px] xl:text-[30px] leading-[26px] sm:leading-[22px] md:leading-[24px] lg:leading-[28px] xl:leading-[38px] tracking-[0%] text-white text-center whitespace-nowrap">
                 User inputs
               </div>
-              <div className="font-['Poppins'] font-normal text-[24px] sm:text-[18px] md:text-[20px] lg:text-[24px] xl:text-[30px] leading-[26px] sm:leading-[22px] md:leading-[24px] lg:leading-[28px] xl:leading-[38px] tracking-[0%] text-white transform rotate-90 sm:rotate-0">
-                V
+              <div className="font-['Poppins'] font-normal text-[24px] sm:text-[28px] md:text-[32px] lg:text-[36px] xl:text-[42px] leading-[26px] tracking-[0%] text-white">
+                <span className="block sm:hidden ">V</span>
+                <span className="hidden sm:block">&gt;</span>
               </div>
               <div className="font-['Poppins'] font-normal text-[24px] sm:text-[18px] md:text-[20px] lg:text-[24px] xl:text-[30px] leading-[26px] sm:leading-[22px] md:leading-[24px] lg:leading-[28px] xl:leading-[38px] tracking-[0%] text-white text-center">
                 Personalized
                 <br className="block sm:hidden" />
                 <span className="whitespace-nowrap">Recommendations</span>
               </div>
-              <div className="font-['Poppins'] font-normal text-[24px] sm:text-[18px] md:text-[20px] lg:text-[24px] xl:text-[30px] leading-[26px] sm:leading-[22px] md:leading-[24px] lg:leading-[28px] xl:leading-[38px] tracking-[0%] text-white transform rotate-90 sm:rotate-0">
-                V
+              <div className="font-['Poppins'] font-normal text-[24px] sm:text-[28px] md:text-[32px] lg:text-[36px] xl:text-[42px] leading-[26px] tracking-[0%] text-white">
+                <span className="block sm:hidden">V</span>
+                <span className="hidden sm:block">&gt;</span>
               </div>
               <div className="font-['Poppins'] font-normal text-[24px] sm:text-[18px] md:text-[20px] lg:text-[24px] xl:text-[30px] leading-[26px] sm:leading-[22px] md:leading-[24px] lg:leading-[28px] xl:leading-[38px] tracking-[0%] text-white text-center whitespace-nowrap">
                 Final Product
