@@ -13,6 +13,7 @@ import FacePage from "./pages/FacePage";
 import Login from "./pages/Login";
 import CreateAccount from "./pages/CreateAccount";
 import ProductDescription from "./pages/ProductDescription";
+import Cart from "./pages/Cart";
 function App() {
   return (
     <Router>
@@ -30,6 +31,7 @@ function App() {
         <Route path="/login" element={<Login />} />
         <Route path="/signup" element={<CreateAccount />} />
         <Route path="/product-description" element={<ProductDescription />} />
+        <Route path="/cart" element={<Cart />} />
       </Routes>
   </Router>
   );
