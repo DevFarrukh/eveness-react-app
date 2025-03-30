@@ -1,6 +1,6 @@
 import React from 'react';
 
-const FaceSummary = () => {
+const FaceSummary = ({ text }) => {
   return (
     <div className="flex flex-col items-center w-full">
       <div className="mt-40 w-[358px] xl:w-[904px] h-[124px] xl:min-h-[271px] mx-auto">
@@ -17,14 +17,14 @@ const FaceSummary = () => {
             backgroundClip: 'text'
           }}
         >
-          The goal for dressing a diamond face shape is to soften prominent cheekbones while highlighting your forehead and chin
+          {text}
         </div>
 
-        <div className="flex justify-center">
+        {/* <div className="flex justify-center">
           <button className="hidden xl:block w-[156px] h-[39px] rounded-[8px] bg-white shadow-[0px_0px_16px_0px_#00000004] backdrop-blur-[36px] font-poppins font-normal text-[16px] leading-[150%] tracking-[0%]">
             Ask Questions
           </button>
-        </div>
+        </div> */}
       </div>
     </div>
   );

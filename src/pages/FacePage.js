@@ -50,7 +50,7 @@ const FacePage = () => {
 
         {/* Summary Section */}
         <div className="">
-          <FaceSummary />
+          <FaceSummary text="The goal for dressing a diamond face shape is to soften prominent cheekbones while highlighting your forehead and chin" />
         </div>
 
         {/* Necklines Section */}
@@ -60,7 +60,7 @@ const FacePage = () => {
 
         {/* Neckline Question Section */}
         <div className="mt-32 md:mt-48">
-          <NecklineQuestion />
+          <NecklineQuestion text="Still have questions about your necklines?" />
         </div>
         
         {/* Products Section */}

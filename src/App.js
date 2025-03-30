@@ -14,6 +14,7 @@ import Login from "./pages/Login";
 import CreateAccount from "./pages/CreateAccount";
 import ProductDescription from "./pages/ProductDescription";
 import Cart from "./pages/Cart";
+import Colors from "./pages/Colors";
 function App() {
   return (
     <Router>
@@ -32,6 +33,7 @@ function App() {
         <Route path="/signup" element={<CreateAccount />} />
         <Route path="/product-description" element={<ProductDescription />} />
         <Route path="/cart" element={<Cart />} />
+        <Route path="/colors" element={<Colors />} />
       </Routes>
   </Router>
   );

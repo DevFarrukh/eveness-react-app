@@ -1,6 +1,6 @@
 import React from 'react';
 
-const NecklineQuestion = () => {
+const NecklineQuestion = ({text}) => {
   return (
     <div className="max-w-[1446px] mx-auto px-4 md:px-0 mb-20">
       <style>
@@ -128,7 +128,7 @@ const NecklineQuestion = () => {
         {/* Content */}
         <div className="relative z-10 h-full flex flex-col items-center justify-center gap-4 sm:gap-6">
           <h2 className="font-poppins font-medium text-[24px] sm:text-[28px] md:text-[32px] xl:text-[36px] leading-[28px] sm:leading-[32px] md:leading-[36px] xl:leading-[38px] text-center text-[#22272A] px-4 sm:px-6 md:px-8">
-            Still have questions about your necklines?
+            {text}
           </h2>
           <button 
             className="w-[160px] sm:w-[175px] md:w-[185px] xl:w-[193px] h-[35px] sm:h-[37px] md:h-[38px] xl:h-[39px] bg-[#22272A] text-white rounded-[8px] font-poppins font-normal text-[14px] sm:text-[15px] md:text-[16px] leading-[150%]"
