@@ -16,6 +16,10 @@ import ProductDescription from "./pages/ProductDescription";
 import Cart from "./pages/Cart";
 import Colors from "./pages/Colors";
 import Body from "./pages/Body";
+import Account from "./pages/Account";
+import Profile from './pages/Profile';
+
+
 function App() {
   return (
     <Router>
@@ -36,8 +40,11 @@ function App() {
         <Route path="/cart" element={<Cart />} />
         <Route path="/colors" element={<Colors />} />
         <Route path="/body" element={<Body />} />
+        <Route path="/account" element={<Account />} />
+        <Route path="/account/profile" element={<Profile />} />
+     
       </Routes>
-  </Router>
+    </Router>
   );
 }
 
