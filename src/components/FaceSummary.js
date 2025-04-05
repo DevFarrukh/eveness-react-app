@@ -9,7 +9,7 @@ const FaceSummary = ({ text }) => {
         </p>
         
         <div 
-          className="font-poppins font-medium text-[19px] xl:text-[39px] leading-[24px] xl:leading-[120%] tracking-[0%] text-center px-4 xl:px-4 mx-auto xl:mb-12"
+          className="font-poppins font-medium text-[19px] xl:text-[39px] leading-[24px] xl:leading-[120%] tracking-[0%] text-center px-4 xl:px-2 mx-auto xl:mb-12"
           style={{
             background: 'linear-gradient(94.93deg, #F2AF9B 22.59%, #BA555C 48.39%, #94BDEB 73.18%)',
             WebkitBackgroundClip: 'text',

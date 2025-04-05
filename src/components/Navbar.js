@@ -10,7 +10,7 @@ const Navbar = ({ navItems }) => {
   // Initial dropdown items
   const initialDropdownItems = [
     { label: "Face", path: "/face" },
-    { label: "Body Shape", path: "/body-shape" },
+    { label: "Body Shape", path: "/body" },
     { label: "Style Guide", path: "/style-guide" },
   ];
 
