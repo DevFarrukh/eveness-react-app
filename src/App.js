@@ -18,7 +18,7 @@ import Colors from "./pages/Colors";
 import Body from "./pages/Body";
 import Account from "./pages/Account";
 import Profile from './pages/Profile';
-
+import Orders from './pages/Orders';
 
 function App() {
   return (
@@ -42,7 +42,7 @@ function App() {
         <Route path="/body" element={<Body />} />
         <Route path="/account" element={<Account />} />
         <Route path="/account/profile" element={<Profile />} />
-     
+        <Route path="/account/orders" element={<Orders />} />
       </Routes>
     </Router>
   );
