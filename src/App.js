@@ -19,7 +19,7 @@ import Body from "./pages/Body";
 import Account from "./pages/Account";
 import Profile from './pages/Profile';
 import Orders from './pages/Orders';
-
+import Terms from './pages/Terms';
 function App() {
   return (
     <Router>
@@ -43,6 +43,7 @@ function App() {
         <Route path="/account" element={<Account />} />
         <Route path="/account/profile" element={<Profile />} />
         <Route path="/account/orders" element={<Orders />} />
+        <Route path="/terms" element={<Terms />} />
       </Routes>
     </Router>
   );
