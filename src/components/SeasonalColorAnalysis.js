@@ -19,11 +19,11 @@ const SeasonalColorAnalysis = () => {
         }}
       >
         {/* Left side image */}
-        <div className="absolute left-[-400px] top-[-264px] md:left-[-323px] md:top-[-264px] z-20 md:z-0">
+        <div className="absolute left-[-100px] top-[-33px] md:left-[-66px] md:top-[-0px] z-20 md:z-0 scale-x-[-1]">
           <img 
             src={seasonalImage} 
             alt="Seasonal color" 
-            className="w-full h-full md:w-[654px] md:h-[994px] object-cover"
+            className="w-[333px] h-[340px] md:w-[341px] md:h-[317px] object-cover"
           />
         </div>
 

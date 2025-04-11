@@ -23,10 +23,10 @@ const FaceShapeAnalysis = () => {
         <img 
           src={faceShapeImage} 
           alt="Oval face shape" 
-          className="block md:hidden absolute w-[243px] h-[339px] object-cover left-1/2 -translate-x-1/2"
+          className="block md:hidden absolute w-[395px] h-[420px] object-cover left-1/2 -translate-x-1/2 top-[-0px]"
         />
         {/* Desktop Image */}
-        <div className="hidden md:block absolute" style={{ left: '183px', top: '6px' }}>
+        <div className="hidden md:block absolute" style={{ left: '183px', top: '-66px' }}>
           <img 
             src={faceShapeImage} 
             alt="Oval face shape" 
@@ -35,7 +35,7 @@ const FaceShapeAnalysis = () => {
           
           {/* Oval face shape border overlay - Desktop only */}
           <div 
-            className="absolute w-[92px] h-[120px] top-[48px] left-[112px]"
+            className="absolute w-[113px] h-[156px] top-[100px] left-[106px]"
             style={{
               border: '2px dashed #C7C7C7',
               borderRadius: '50% / 50%',
