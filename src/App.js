@@ -21,6 +21,7 @@ import Profile from './pages/Profile';
 import Orders from './pages/Orders';
 import Terms from './pages/Terms';
 import Dashboard from "./pages/Dashboard";
+import EvenessChat from "./pages/EvenessChat";
 function App() {
   return (
     <Router>
@@ -46,6 +47,7 @@ function App() {
         <Route path="/account/orders" element={<Orders />} />
         <Route path="/terms" element={<Terms />} />
         <Route path="/dashboard" element={<Dashboard />} />
+        <Route path="/evenesschat" element={<EvenessChat />} />
       </Routes>
     </Router>
   );

@@ -8,10 +8,8 @@ import  GoogleIcon  from '../assets/google.svg';
 const Login = () => {
   return (
     <div className="min-h-screen bg-[#EDE3DD]">
-      {/* Navbar at the top */}
       <Navbar navItems={LoginPageNavItems}/>
       
-      {/* Main container with max width */}
       <div className="max-w-[1446px] mx-auto px-4 lg:px-[32px]">
         <div className="min-h-[calc(100vh-80px)] lg:min-h-0 flex items-center lg:items-start pt-[124px] lg:pb-[40px] gap-0 lg:gap-[30px] xl:gap-[90px] justify-center lg:justify-start">
           {/* Left side - Image */}
@@ -28,7 +26,6 @@ const Login = () => {
           {/* Right side - Login Form */}
           <div className="w-full lg:w-auto lg:pt-[60px] xl:pt-[105px] flex justify-center lg:justify-start">
             <div className="w-full max-w-[320px] lg:max-w-none lg:w-[450px] xl:w-[514px] -mt-20 lg:mt-0">
-              {/* Background container */}
               <div className="lg:w-full lg:h-[500px] xl:h-[611px] lg:bg-[#FFFFFF99] lg:rounded-[16px] lg:relative">
                 {/* Inner container */}
                 <div className="w-full lg:absolute lg:w-[380px] xl:w-[418px] lg:h-[460px] xl:h-[496px] lg:top-[40px] xl:top-[58px] lg:left-[35px] xl:left-[48px] flex flex-col gap-[46px]">

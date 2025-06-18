@@ -22,7 +22,12 @@ const Home = () => {
                 <div style={{ 
                     position: 'absolute',
                     top: '-130px',
-                    height: '1418px',
+                    left: 0,
+                    right: 0,
+                    bottom: 0,
+                    width: '100%',
+                    height: '100vh',
+                    minHeight: '1418px',
                     overflow: 'hidden',
                     zIndex: 0
                 }}>
@@ -32,11 +37,16 @@ const Home = () => {
                         muted
                         playsInline
                         style={{
+                            position: 'absolute',
+                            top: '50%',
+                            left: '50%',
                             width: '100%',
                             height: '100%',
                             objectFit: 'cover',
+                            transform: 'translate(-50%, -50%) scale(1.1)',
                             filter: 'blur(108.1px)',
-                            transform: 'scale(1.1)'
+                            minWidth: '100%',
+                            minHeight: '100%'
                         }}
                     >
                         <source src={heroVideo} type="video/mp4" />
@@ -45,9 +55,12 @@ const Home = () => {
                         position: 'absolute',
                         top: 0,
                         left: 0,
+                        right: 0,
+                        bottom: 0,
                         width: '100%',
                         height: '100%',
-                        background: 'linear-gradient(180deg, rgba(252, 247, 243, 0.56) 0%, rgba(252, 247, 243, 0.56) 85%, rgba(252, 247, 243, 0.75) 92%, rgba(252, 247, 243, 0.9) 96%, #FCF7F3 100%)'
+                        background: 'linear-gradient(180deg, rgba(252, 247, 243, 0.56) 0%, rgba(252, 247, 243, 0.56) 85%, rgba(252, 247, 243, 0.75) 92%, rgba(252, 247, 243, 0.9) 96%, #FCF7F3 100%)',
+                        zIndex: 1
                     }}></div>
                 </div>
 

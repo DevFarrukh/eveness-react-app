@@ -208,11 +208,11 @@ const ProductDescription = () => {
           </div>
         </div>
 
-        {/* Desktop Layout - Keep existing code */}
+        {/* Desktop Layout */}
         <div className="hidden xl:block">
-          {/* Main container - remove fixed width on xl breakpoint */}
+          {/* Main container  */}
           <div className="relative w-[358px] sm:w-[600px] md:w-[800px] lg:w-[1200px] xl:w-full h-[2000px] sm:h-[2500px] md:h-[2800px] xl:h-[3131px] mx-auto mb-40">
-            {/* Background gradient with blur - make it full width */}
+            {/* Background gradient with blur */}
             <div className="w-full">
               {/* Blur layer */}
               <div 
@@ -235,7 +235,7 @@ const ProductDescription = () => {
                 { label: "Cart", path: "/cart" }
               ]} />     
 
-              {/* Two Column Layout - center the content */}
+              {/* Two Column Layout */}
               <div className="relative w-full max-w-[1512px] mx-auto flex flex-col xl:flex-row px-4 xl:px-0">
                 {/* Left Column - Images */}
                 <div className="w-full xl:w-[765px] flex flex-col gap-8">
@@ -474,7 +474,7 @@ const ProductDescription = () => {
                 </div>
               </div>
 
-              {/* Products Section - make it full width */}
+              {/* Products Section */}
               <div className="w-full bg-[#FCF7F3]">
                 <div className="max-w-[1446px] mx-auto mt-32 md:mt-72 mb-20 md:mb-40 px-4 md:px-0">
                   {/* Header and Button */}
@@ -511,7 +511,7 @@ const ProductDescription = () => {
                 </div>
               </div>
 
-              {/* Footer - make it full width */}
+              {/* Footer */}
               <div className="w-full">
                 <Footer />
               </div>

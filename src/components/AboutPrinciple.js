@@ -67,7 +67,7 @@ const AboutPrinciple = ({ imageOnRight, title, description, image }) => {
         </motion.div>
       </div>
 
-      {/* Desktop Layout - only show at xl breakpoint */}
+      {/* Desktop Layout*/}
       <div className="hidden xl:block">
         <div className="absolute w-[1269px] h-[627px] top-[178px] left-[121.5px] flex gap-[143px] z-10">
           {!imageOnRight ? (

@@ -50,7 +50,7 @@ const Profile = () => {
           <AccountNav activeTab="profile" />
         </div>
 
-        {/* Content container with matching padding */}
+        {/* Content container */}
         <div className="max-w-[1369px] mx-auto">
           {/* Unit toggle */}
           <div className="flex items-center gap-4 mb-12">

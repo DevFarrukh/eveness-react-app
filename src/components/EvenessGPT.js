@@ -92,7 +92,7 @@ const EvenessGPT = () => {
           width: "100%",
           height: "auto",
           borderRadius: "0px",
-          "@media (min-width: 768px)": {
+          "@media (min-width: 1280px)": {
             width: "1375px",
             height: "744px",
             borderRadius: "16px",
@@ -101,9 +101,10 @@ const EvenessGPT = () => {
       >
         {/* Inner Blurred Section */}
         <div 
-          className="animated-gradient w-full md:w-[1275px] h-[500px] md:h-[448px] p-4 md:p-6 flex flex-col items-start justify-start relative overflow-hidden rounded-none md:rounded-2xl"
+          className="animated-gradient w-full md:w-[90%] xl:w-[1275px] h-[500px] md:h-[448px] p-4 md:p-6 flex flex-col items-start justify-start relative overflow-hidden rounded-none md:rounded-2xl"
           style={{
             backgroundColor: "rgba(255, 255, 255, 0.15)",
+            maxWidth: "100%"
           }}
         >
           {/* Floating blobs with updated styling */}
@@ -125,8 +126,8 @@ const EvenessGPT = () => {
           }}/>
 
           {/* Floating Chat Bubbles */}
-          <div className="relative w-full mb-8 md:mb-0 mt-4 md:mt-8">
-            <div className="absolute left-4 md:left-24 top-0 md:top-16 px-3 md:px-4 py-2 md:py-3 rounded-[13px] shadow-sm text-xs md:text-sm" 
+          <div className="relative w-full mb-8 md:mb-0 mt-4 md:mt-4">
+            <div className="absolute left-4 md:left-24 top-0 md:top-8 px-3 md:px-4 py-2 md:py-3 rounded-[13px] shadow-sm text-xs md:text-sm" 
               style={{ 
                 border: "1px solid rgba(174, 174, 174, 1)",
                 background: "rgba(225, 225, 225, 0.95)",

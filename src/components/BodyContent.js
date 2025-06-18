@@ -53,7 +53,7 @@ const BodyContent = () => {
             </div>
           </div>
 
-          {/* Desktop Annotations - Keep existing code but hide on mobile */}
+          {/* Desktop Annotations */}
           <div className="hidden lg:flex items-center">
             {/* Horizontal Line */}
             <div 

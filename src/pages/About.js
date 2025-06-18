@@ -63,7 +63,6 @@ const About = () => {
           <div className="flex-grow">
             <AboutHero />
             <AboutText />
-            {/* Added full-width background container */}
             <div className="w-full bg-[#FCF7F3] relative z-20">
               <div className="max-w-[1920px] mx-auto">
                 <AboutCrafted />
@@ -79,7 +78,6 @@ const About = () => {
                     </p>
                   </div>
                 </div>
-                {/* Added full-width background for principles section */}
                 <div className="w-full bg-[#FCF7F3]">
                   <div className="flex flex-col gap-10 max-w-[1920px] mx-auto">
                     {evesnessPrinciples.map((principle, index) => (

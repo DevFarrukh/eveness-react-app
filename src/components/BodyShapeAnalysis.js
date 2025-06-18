@@ -6,7 +6,7 @@ import AnalysisBottomBar from './AnalysisBottomBar';
 const BodyShapeAnalysis = () => {
   return (
     <div className="relative flex flex-col">
-      {/* Main Container - Responsive */}
+      {/* Main Container */}
       <div 
         className="w-[358px] h-[421px] md:w-[702px] md:h-[520px] rounded-[16px] md:rounded-[14.4px] relative overflow-hidden"
         style={{
@@ -46,7 +46,7 @@ const BodyShapeAnalysis = () => {
           }}
         />
 
-        {/* Content Layer - Above Image */}
+        {/* Content Layer */}
         <div className="relative z-20">
           {/* Trait Section */}
           <div 

@@ -18,7 +18,7 @@ const FaceShapeAnalysis = () => {
           }
         }}
       >
-        {/* Center Image - Different positioning for mobile and desktop */}
+        {/* Center Image */}
         {/* Mobile Image */}
         <img 
           src={faceShapeImage} 

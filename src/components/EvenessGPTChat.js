@@ -135,7 +135,7 @@ const EvenessGPTChat = () => {
         >
           {/* Floating Annotations */}
           <div className="relative w-full mb-8 sm:mb-12 xl:mb-0">
-            {/* Mobile/Tablet Annotations (show through iPad Pro) */}
+            {/* Mobile/Tablet Annotations */}
             <div className="block xl:hidden">
               <AnnotationBubble 
                 icon={pencilIcon}

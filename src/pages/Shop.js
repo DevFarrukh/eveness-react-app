@@ -27,7 +27,7 @@ const Shop = () => {
         { label: "Home", path: "/home" },
         { label: "Dashboard", path: "/dashboard", hasDropdown: true },
         { label: "Shop", path: "/shop" },
-        { label: "Magazine", path: "/magazine" },
+        { label: "Eveness Chat", path: "/evenesschat" },
         { label: "Account", path: "/account" },
         { label: "Cart", path: "/cart" }
       ]} />       

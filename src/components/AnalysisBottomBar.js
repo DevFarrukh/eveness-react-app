@@ -1,10 +1,10 @@
 import React from 'react';
 
 const AnalysisBottomBar = ({ 
-  label,          // "Your Body Shape Analysis"
-  title,          // "Hourglass"
-  buttonText,     // "Accentuate my Figure"
-  isMobile       // New prop to handle mobile-specific styling
+  label,          
+  title,          
+  buttonText,   
+  isMobile  
 }) => {
   // Mobile-specific styles
   if (isMobile) {
@@ -42,7 +42,6 @@ const AnalysisBottomBar = ({
     );
   }
 
-  // Desktop version remains unchanged
   return (
     <div 
       className="absolute w-[652px] h-[72px] bottom-[20px] left-[25px] rounded-[10.8px] p-[18px] flex items-center"

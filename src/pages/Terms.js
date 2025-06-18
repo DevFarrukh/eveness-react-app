@@ -40,33 +40,3 @@ const Terms = () => {
 };
 
 export default Terms;
-
-// Add this to your global CSS file
-const scrollbarStyles = `
-@layer utilities {
-  /* Firefox */
-  * {
-    scrollbar-width: thin;
-    scrollbar-color: #C7C7C7 #F5F5F5;
-  }
-
-  /* Chrome, Edge, and Safari */
-  *::-webkit-scrollbar {
-    width: 7px;
-    position: absolute;
-    right: 16px;
-  }
-
-  *::-webkit-scrollbar-track {
-    background: #F5F5F5;
-    border-radius: 12px;
-    margin-top: 16px;
-    margin-bottom: 16px;
-  }
-
-  *::-webkit-scrollbar-thumb {
-    background-color: #C7C7C7;
-    border-radius: 12px;
-  }
-}
-`; 

@@ -113,7 +113,7 @@ const Quiz1 = () => {
 
       <div className="mt-24 flex justify-center mb-8">
         <button
-          onClick={() => {/* Handle continue action */}}
+          onClick={() => {}}
           disabled={!selectedType}
           className={`w-[262px] h-[51px] rounded-[8px] bg-[#22272A] shadow-[0px_0px_16px_0px_#00000004] backdrop-blur-[36px] text-white transition-all ${
             !selectedType ? 'opacity-50 cursor-not-allowed' : 'hover:opacity-90'

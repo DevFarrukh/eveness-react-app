@@ -80,7 +80,7 @@ const Quiz2 = () => {
             JPEG, PNG, JPG and MP4 formats, up to 50MB
           </p>
           
-          {/* Buttons - Added mt-8 for mobile */}
+          {/* Buttons */}
           <div className="flex flex-row gap-4 w-full md:w-auto mt-16 md:mt-0">
             <button className="w-[136px] md:w-[148px] h-[50px] rounded-[8px] bg-[#22272A] md:bg-[#FFFFFF99] text-white md:text-[#292D32] shadow-[0px_0px_16px_0px_#00000004] backdrop-blur-[36px] hover:bg-opacity-90 font-poppins font-medium text-[14px] leading-[150%] tracking-[0%]">
               Take Image

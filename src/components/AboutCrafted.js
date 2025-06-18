@@ -3,7 +3,7 @@ import craftedImage from "../assets/crafted-image.png"; // You'll need to add th
 const AboutCrafted = () => {
   return (
     <div className="w-[358px] sm:w-[600px] md:w-[720px] lg:w-[900px] xl:w-[1077px] mx-auto mt-20 md:mt-40 xl:mt-80 px-4 xl:px-0">
-      {/* Main container with relative positioning */}
+      {/* Main container */}
       <div className="relative w-full">
         {/* Blur background */}
         <div 

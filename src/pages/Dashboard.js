@@ -18,24 +18,20 @@ const Dashboard = () => {
           
           {/* Content Container */}
           <div className="flex-grow">
-            {/* Dashboard Content with max-width constraint */}
+            {/* Dashboard Content */}
             <div className="max-w-[1512px] mx-auto px-4 sm:px-6 md:px-8 
                           pt-[60px] sm:pt-[80px] md:pt-[100px] xl:pt-[120px]">
-              {/* Responsive layout container */}
               <div className="flex flex-col xl:flex-row gap-4 sm:gap-6 md:gap-8">
                 {/* Left column */}
                 <div className="flex flex-col gap-4 sm:gap-6 md:gap-8 xl:gap-0 w-full">
-                  {/* Welcome Header */}
                   <div className="w-full flex justify-center xl:justify-start">
                     <WelcomeHeader name="Christine" />
                   </div>
                   
-                  {/* Body Shape Analysis */}
                   <div className="w-full flex justify-center xl:justify-start">
                     <BodyShapeAnalysis />
                   </div>
 
-                  {/* Show these in mobile layout below xl breakpoint */}
                   <div className="w-full flex justify-center xl:hidden">
                     <SeasonalColorAnalysis />
                   </div>
@@ -57,7 +53,6 @@ const Dashboard = () => {
                 </div>
               </div>
 
-              {/* Eveness GPT Chat */}
               <div className="mt-4 sm:mt-6 md:mt-8 xl:mt-8 w-full">
                 <EvenessGPTChat />
               </div>
