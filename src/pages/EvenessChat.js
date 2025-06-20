@@ -62,7 +62,7 @@ const EvenessChat = () => {
         { label: "Account", path: "/account" },
         { label: "Cart", path: "/cart" }
       ]} />
-      <div className="flex flex-row items-stretch justify-center w-full max-w-[1800px] mx-auto gap-8 mt-24 mb-12" style={{ height: 'min(90vh, 822px)', minHeight: 400 }}>
+      <div className="flex flex-row items-stretch justify-center w-full max-w-[1800px] mx-auto gap-8 mt-24 mb-12 xl:h-[min(90vh,822px)] xl:min-h-[400px]">
         {/* Desktop layout - only show on xl screens */}
         <div className="hidden xl:flex flex-col items-center w-full min-h-screen" style={{ minWidth: 1440, minHeight: 1000 }}>
           {/* Margin for navbar */}
@@ -235,17 +235,14 @@ const EvenessChat = () => {
         </div>
 
         {/* Mobile/Tablet layout */}
-        <div className="flex xl:hidden flex-col w-full h-screen">
-          {/* Center content */}
-          <div className="flex flex-col items-center justify-center px-4 flex-grow">
-            {/* Title in center */}
-            <div className="flex items-center justify-center">
-              <h1 className="text-4xl font-normal text-white" style={{ fontFamily: 'Poppins' }}>Hi Christine</h1>
-            </div>
+        <div className="flex xl:hidden flex-col w-full h-[100dvh] fixed inset-0 overflow-hidden">
+          {/* Center content - Fixed position */}
+          <div className="fixed top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 w-full px-4 text-center">
+            <h1 className="text-4xl font-normal text-white" style={{ fontFamily: 'Poppins' }}>Hi Christine</h1>
           </div>
 
           {/* Bottom section with cards and input - Fixed at bottom */}
-          <div className="fixed bottom-0 left-0 right-0  backdrop-blur-md pb-safe">
+          <div className="fixed bottom-0 left-0 right-0 backdrop-blur-md pb-safe">
             {/* Cards right above input */}
             <div className="w-full flex justify-center gap-3 mb-4 px-4 pt-4">
               <div className="bg-white/40 backdrop-blur-md border border-[#AEAEAE] flex flex-col items-start p-2" style={{
