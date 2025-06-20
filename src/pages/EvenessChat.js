@@ -12,7 +12,7 @@ import { LuUpload } from "react-icons/lu";
 import { IoSearch } from "react-icons/io5";
 import { VscSend } from "react-icons/vsc";
 
-// Animated gradient styles from EvenessGPT.js
+// Animated gradient styles
 const gradientStyles = `
   @keyframes gradient {
     0% { background-position: 0% 50%; }
@@ -20,14 +20,20 @@ const gradientStyles = `
     100% { background-position: 0% 50%; }
   }
   .animated-gradient-bg {
-    background: linear-gradient(-45deg, #f5e6e6 0%, #e8d1d1 25%, #d4b3b3 50%, #c19898 75%, #b88282 100%);
+    background: linear-gradient(-45deg, #EDE3DD 0%, #E5D9D2 25%, #DDD0C7 50%, #D5C6BC 75%, #CDBDB2 100%);
     background-size: 400% 400%;
-    animation: gradient 5s ease infinite;
+    animation: gradient 15s ease infinite;
     min-height: 100vh;
     width: 100vw;
     position: fixed;
-    top: 0; left: 0; z-index: -1;
-    filter: blur(0px) saturate(110%);
+    top: 0;
+    left: 0;
+    z-index: -1;
+  }
+  .content-blur {
+    background: rgba(237, 227, 221, 0.4);
+    backdrop-filter: blur(40px);
+    -webkit-backdrop-filter: blur(40px);
   }
 `;
 
