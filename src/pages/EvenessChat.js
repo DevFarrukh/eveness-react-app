@@ -235,19 +235,19 @@ const EvenessChat = () => {
         </div>
 
         {/* Mobile/Tablet layout */}
-        <div className="flex xl:hidden flex-col w-full">
+        <div className="flex xl:hidden flex-col w-full h-screen">
           {/* Center content */}
-          <div className="flex flex-col items-center px-4">
+          <div className="flex flex-col items-center justify-center px-4 flex-grow">
             {/* Title in center */}
-            <div className="flex items-center justify-center" style={{ marginTop: '35%' }}>
+            <div className="flex items-center justify-center">
               <h1 className="text-4xl font-normal text-white" style={{ fontFamily: 'Poppins' }}>Hi Christine</h1>
             </div>
           </div>
 
-          {/* Bottom section with cards and input */}
-          <div className="mt-auto">
+          {/* Bottom section with cards and input - Fixed at bottom */}
+          <div className="fixed bottom-0 left-0 right-0  backdrop-blur-md pb-safe">
             {/* Cards right above input */}
-            <div className="w-full flex justify-center gap-3 mb-4 px-4">
+            <div className="w-full flex justify-center gap-3 mb-4 px-4 pt-4">
               <div className="bg-white/40 backdrop-blur-md border border-[#AEAEAE] flex flex-col items-start p-2" style={{
                 width: '152px',
                 height: '72px',
@@ -271,15 +271,15 @@ const EvenessChat = () => {
             {/* Input container */}
             <div className="w-full px-2 sm:px-4 py-4">
               {/* Input row */}
-              <div className="flex items-center gap-1.5 sm:gap-2">
-                <button className="p-3 sm:p-4 rounded-xl bg-white/40 backdrop-blur-md">
+              <div className="flex items-center gap-1.5 sm:gap-2 max-w-full overflow-hidden">
+                <button className="p-3 sm:p-4 rounded-xl bg-white/40 backdrop-blur-md flex-shrink-0">
                   <LuUpload size={15} />
                 </button>
-                <div className="flex-1 flex items-center gap-2 bg-white/40 backdrop-blur-md rounded-xl px-3 sm:px-4 py-3">
-                  <IoSearch size={20} className="mr-2" />
-                  <input className="flex-1 bg-transparent outline-none placeholder-gray-500 text-sm" placeholder="Ask Eveness GPT" style={{ fontFamily: 'Poppins' }} />
+                <div className="flex-1 flex items-center gap-2 bg-white/40 backdrop-blur-md rounded-xl px-3 sm:px-4 py-3 min-w-0">
+                  <IoSearch size={20} className="flex-shrink-0 mr-2" />
+                  <input className="flex-1 bg-transparent outline-none placeholder-gray-500 text-sm min-w-0" placeholder="Ask Eveness GPT" style={{ fontFamily: 'Poppins' }} />
                 </div>
-                <button className="p-3 sm:p-4 rounded-xl bg-white/40 backdrop-blur-md">
+                <button className="p-3 sm:p-4 rounded-xl bg-white/40 backdrop-blur-md flex-shrink-0">
                   <VscSend size={20} />
                 </button>
               </div>
